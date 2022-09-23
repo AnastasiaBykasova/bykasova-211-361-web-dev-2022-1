@@ -31,5 +31,9 @@ body {
 .elements-fb {
     text-align: left;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.send-button {
+    text-align: center;
 }
