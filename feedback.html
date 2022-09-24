@@ -12,25 +12,32 @@
     <header>
     </header>
     <main>
-        <div class="background-autumn">
+        <div class="background-login">
             <div class="container">
-            <form class="feedback_form" action="" method="post" name="feedback_form">
+            <form class="feedback_form" method="post" name="feedback_form">
                 <h1>Feedback</h1>
+                <p><a class="hp-back" href="index.html"><i>На главную</i> &#8617;</a></p>
                 <div class="elements-fb">
                     <p>Фамилия: <input type="text" name="surname-input"placeholder="Введите фамилию" size="18"/></p>
                     <p>Имя: <input type="text" name="name-input"placeholder="Введите имя" size="18"/></p>
                     <p>Отчество: <input type="text" name="midname-input"placeholder="Введите отчество" size="18"/></p>
                     <p>Email: <input type="email" name="email-input"placeholder="Введите email" size="18"/></p>
-                    <p>Откуда узнали о нас? 
-                        <input type="radio" name="type-input">В школе/в университете/на работе
-                        <input type="radio" name="type-input">Из социальных сетей</p>
+                    <div class="from-where">
+                        <p>Откуда узнали о нас? </p>
+                        <p><input type="radio" name="type-input">В школе/в университете/на работе
+                        <p><input type="radio" name="type-input">Из социальных сетей</p>
+                        <p><input type="radio" name="type-input">От семьи/друзей/знакомых</p>
+                        <p><input type="radio" name="type-input">Из рекламы</p>
+                    </div>
                     <p>Тип обращения: 
                     <select id="letter-type">
                         <option value=”1”>Предложение</option>
                         <option value=”2”>Жалоба</option>                        
                     </select></p>
-                    <p>Текст сообщения: </p>
-                    <textarea name="Tell us" rows="5" wrap="soft"></textarea>
+                    <div class="appeal-text">
+                        <p>Текст сообщения: </p>
+                        <textarea name="Tell us" rows="5" wrap="soft"></textarea>
+                    </div>
                     <p>Вложения: <input type="file" name="file-input" multiple></p>
                     <p>Даю согласие на обработку персональных данных <input type="checkbox"/></p>
                     <p><div class="send-button">

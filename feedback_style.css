@@ -2,8 +2,9 @@ body {
     margin: 0 0;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
+    background-color: #2D0051;
 }
-.background-autumn {
+.background-login {
     padding-top: -10px;
     margin: 0;
     background-image: url(bg_1.jpg); 
@@ -15,6 +16,7 @@ body {
 .container {
     margin: 0 30%;
     padding-left: 0px;
+    padding-top: 0px;
     background-color: #e4c2ff;
     background-size: cover;
     width: 40%;
@@ -26,6 +28,18 @@ body {
     padding-left: 20px;
     font-size: 14px;
     padding-bottom: 5px;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+.hp-back {
+    color: #2D0051;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+}
+.from-where, .appeal-text {
+    line-height: 0.3em;
 }
 .send-button {
     text-align: center;
