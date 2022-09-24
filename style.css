@@ -154,3 +154,42 @@ a:before {
     position: relative;
     bottom: -20px;
 }
+
+.my-name {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+.text-email {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.email {
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.text-phone {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 50px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.number-phone {
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
