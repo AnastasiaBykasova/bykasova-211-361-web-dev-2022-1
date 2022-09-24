@@ -9,7 +9,6 @@ body {
 }
 .header {
     margin: 0px;
-    
 }
 .nav {
     color: white;
@@ -69,12 +68,26 @@ a:before {
     background-size: 30%;
     margin-bottom: -40px;   
 }
-.bird {
+.text-desc {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    background-color: #2D0051;
+    color: #e4c2ff;
+}
+
+.bird-pic {
     vertical-align: middle;
     position: absolute;
     top: 30%;
-    left: 0.01%;
-    
+    left: -190px;
+}
+.cat-pic {
+    position: absolute;
+    top: 60%;
+    left: 15%;
 }
 
 
@@ -83,13 +96,14 @@ a:before {
 	margin-bottom: 20px;
 	border-collapse: separate;
     position: relative;
-    left: 50%;
+    left: 60.5%;
     top: 3%;
     background-color: white;
 }
 .table caption {
     font-weight: bold;
     font-size: 16px;
+    text-align: right;
 }
 .table thead th {
 	font-weight: bold;
