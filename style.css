@@ -63,10 +63,10 @@ a:before {
 
 .elements {
     background-image: url(bg_6.jpg);
-    height: 85vh;
+    height: 87vh;
     background-repeat: round;
     background-size: 30%;
-    margin-bottom: -40px;   
+    margin-bottom: -45px;   
 }
 .text-desc {
     padding-left: 10px;

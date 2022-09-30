@@ -10,6 +10,7 @@ body {
 }
 .header {
     margin: 0px;
+    margin-bottom: -30px;
 }
 .nav {
     color: white;
@@ -66,7 +67,7 @@ a:before {
     padding-top: -10px;
     margin: 0;
     background-image: url(bg_1.jpg); 
-    height: 100vh;
+    height: 88vh;
     background-repeat: round;
     background-size: 30%;
     margin-bottom: -40px;
@@ -87,19 +88,74 @@ a:before {
     font-size: 14px;
     padding-bottom: 5px;
     line-height: 1.5;
-    padding-top: 10px;
+    padding-top: 5px;
 }
-/*
-.hp-back {
-    color: #2D0051;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: right;
-}*/
+
 .from-where, .appeal-text {
     line-height: 0.3em;
 }
 .send-button {
     text-align: center;
+}
+
+footer {
+    margin-bottom: 0;
+    position: relative;
+    bottom: 5px;
+}
+
+.down-line {
+    height: 2vh;
+    padding-top: 38px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding-bottom: 2%;
+}
+.bottom-items {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    bottom: -20px;
+}
+
+.my-name {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+.text-email {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.email {
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.text-phone {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 50px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.number-phone {
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
 }
