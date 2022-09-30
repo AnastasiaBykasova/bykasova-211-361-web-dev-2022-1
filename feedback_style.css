@@ -4,6 +4,64 @@ body {
     overflow: hidden;
     background-color: #2D0051;
 }
+
+.container {
+    margin: 0px;   
+}
+.header {
+    margin: 0px;
+}
+.nav {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -15px;
+    object-position: center;
+    vertical-align: text-bottom;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.header-line {
+    padding-top: 25px;
+    display: flex;
+    margin: 0px;
+}
+.my-page {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 10px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+a:hover:before {
+    clip: rect(0, 190px, 190px, 0);
+}
+a:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: attr(data-content);
+    display: inline-block;
+    color: #e4c2ff;
+    width: 100%;
+    clip: rect(0, 0, 190px, 0);
+    -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
+    transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
+}
+
+
 .background-login {
     padding-top: -10px;
     margin: 0;
@@ -13,7 +71,7 @@ body {
     background-size: 30%;
     margin-bottom: -40px;
 }
-.container {
+.container-fb-form {
     margin: 0 30%;
     padding-left: 0px;
     padding-top: 0px;
@@ -31,13 +89,14 @@ body {
     line-height: 1.5;
     padding-top: 10px;
 }
+/*
 .hp-back {
     color: #2D0051;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     text-align: right;
-}
+}*/
 .from-where, .appeal-text {
     line-height: 0.3em;
 }
