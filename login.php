@@ -33,26 +33,23 @@
                     <p>Login: <input type="text" name="log-name"placeholder="Enter login" size="18"/></p>
                     <p>Password: <input type="password" name="pass-name"placeholder="Enter password" size="18"/></p>
                     <p>Remember me <input type="checkbox"/></p>
-                    <p>
-                        <div class="send-button">
-                           <button type="reset">Send</button>
-                        </div>
-                    </p>
+                    <p><div class="send-button"><input type="submit"></div></p>
                 </div>
             </form>
             </div>
         </div>
+        
     </main>
     <footer>
         <div class="down-line">
             <div class="bottom-items">
                 <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
                 <a class="text-email">&#9993; Почта:</a>
-                <!--<a class="email" href="#">nastybykasova@gmail.com</a>-->
-                <a class="email" href="#">@gmail.com</a>
+                <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
             </div>
         </div>
     </footer>  
 </body>
+</html>

@@ -25,7 +25,7 @@
         </div>
     </header>
     <main>
-        <div class="background-login">
+        <div class="background-fb">
             <div class="container-fb-form">
             <form class="feedback_form" method="post" name="feedback_form">
                 <h1 class="name-fb">Feedback</h1>
@@ -53,10 +53,7 @@
                     </div>
                     <p>Вложения: <input type="file" name="file-input" multiple></p>
                     <p>Даю согласие на обработку персональных данных <input type="checkbox"/></p>
-                    <p><div class="send-button">
-                            <button type="reset">Send</button>
-                        </div>
-                    </p>
+                    <p><div class="send-button"><input type="submit"></div></p>
                 </div>
             </form>
             </div>
@@ -67,11 +64,11 @@
             <div class="bottom-items">
                 <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
                 <a class="text-email">&#9993; Почта:</a>
-                <!--<a class="email" href="#">nastybykasova@gmail.com</a>-->
-                <a class="email" href="#">@gmail.com</a>
+                <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
             </div>
         </div>
     </footer>  
 </body>
+</html>

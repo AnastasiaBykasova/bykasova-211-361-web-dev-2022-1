@@ -10,8 +10,6 @@
 </head>
 <body>
     <header> 
-    </header>
-    <main>
         <div class="header">
             <div class="container">
                 <div class="header-line">
@@ -25,6 +23,8 @@
                 </div>
             </div>
         </div>
+    </header>
+    <main>
         <div class="elements">
             <div class="text-desc">
                 <h1 class="description">It's a simple text</h1>
@@ -120,8 +120,7 @@
             <div class="bottom-items">
                 <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
                 <a class="text-email">&#9993; Почта:</a>
-                <!--<a class="email" href="#">nastybykasova@gmail.com</a>-->
-                <a class="email" href="#">@gmail.com</a>
+                <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
             </div>
