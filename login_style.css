@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #2D0051;
 }
 
@@ -29,6 +29,7 @@ body {
     display: flex;
     margin: 0px;
     padding-bottom: -20px;
+    
 }
 .my-page {
     color: white;
@@ -63,7 +64,8 @@ a:before {
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
 .background-login {
-    padding-top: -10px;
+    padding-top: 0px;
+    
     margin: 0;
     background-image: url(bg_1.jpg); 
     height: 88vh;
@@ -81,6 +83,10 @@ a:before {
     width: 40%;
     position:relative;
     text-align: center;
+}
+
+form {
+    vertical-align: middle;
 }
 
 .elements-login {
