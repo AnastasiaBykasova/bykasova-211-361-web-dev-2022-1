@@ -14,11 +14,11 @@
             <div class="container">
                 <div class="header-line">
                     <div class="nav">
-                        <a data-content="Homepage" class="my-page" href="index.html">Homepage &#9749;</a>
+                        <a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>
                         <a data-content="Контакты" href="#">Контакты &#9734;</a>
                         <a data-content="Достижения" href="#">Достижения &#36;</a>
-                        <a data-content="Log in" href="login.html">Log in &#10149;</a>
-                        <a data-content="Feedback" href="feedback.html">Feedback &#8258;</a>
+                        <a data-content="Log in" href="login.php">Log in &#10149;</a>
+                        <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <div class="elements-login">
                     <p>Login: <input type="text" name="log-name"placeholder="Enter login" size="18"/></p>
                     <p>Password: <input type="password" name="pass-name"placeholder="Enter password" size="18"/></p>
-                    <p>Remember me <input type="checkbox"/></p>
+                    <p>Remember me <input type="checkbox"></p>
                     <p><div class="send-button"><input type="submit"></div></p>
                 </div>
             </form>

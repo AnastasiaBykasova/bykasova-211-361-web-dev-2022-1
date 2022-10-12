@@ -17,8 +17,8 @@
                         <a data-content="Homepage" class="my-page">Homepage &#9749;</a>
                         <a data-content="Контакты" href="#">Контакты &#9734;</a>
                         <a data-content="Достижения" href="#">Достижения &#36;</a>
-                        <a data-content="Log in" href="login.html">Log in &#10149;</a>
-                        <a data-content="Feedback" href="feedback.html">Feedback &#8258;</a>
+                        <a data-content="Log in" href="login.php">Log in &#10149;</a>
+                        <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                     </div>
                 </div>
             </div>
