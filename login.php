@@ -14,11 +14,36 @@
             <div class="container">
                 <div class="header-line">
                     <div class="nav">
-                        <a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>
+                        <!--<a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>-->
+                        <a data-content="Homepage" href="<?php 
+                            $name='Homepage &#9749;'; 
+                            $link='index.php'; 
+                            $current_page=true; 
+                            echo $link; 
+                        ?>"> <?php 
+                        if( $current_page ) 
+                            echo $name;
+                        ?></a>
                         <a data-content="Контакты" href="#">Контакты &#9734;</a>
                         <a data-content="Достижения" href="#">Достижения &#36;</a>
-                        <a data-content="Log in" href="login.php">Log in &#10149;</a>
-                        <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
+                        <a data-content="Log in" href="<?php 
+                            $name='Log in &#10149;'; 
+                            $link='login.php'; 
+                            $current_page=true; 
+                            echo $link; 
+                        ?>"> <?php 
+                        if( $current_page ) 
+                            echo $name;
+                        ?></a>
+                        <a data-content="Feedback" href="<?php 
+                            $name='Feedback &#8258;'; 
+                            $link='feedback.php'; 
+                            $current_page=true; 
+                            echo $link; 
+                        ?>"> <?php 
+                        if( $current_page ) 
+                            echo $name;
+                        ?></a>
                     </div>
                 </div>
             </div>
@@ -49,6 +74,7 @@
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
             </div>
+            <p class = "foot-date"><?php require "date.php" ?></p>
         </div>
     </footer>  
 </body>

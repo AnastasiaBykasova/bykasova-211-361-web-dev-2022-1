@@ -72,12 +72,12 @@ a:before {
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
-    left: 20%;
+    left: 10%;
     top: 14%;
     background-color: #2D0051;
     color: #e4c2ff;
 }
-
+/*
 .bird-pic {
     vertical-align: middle;
     position: absolute;
@@ -88,8 +88,13 @@ a:before {
     position: absolute;
     top: 60%;
     left: 15%;
+}*/
+.pictures-hp {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    transform: rotate(-30deg)
 }
-
 
 .table {
 	border: none;
@@ -152,6 +157,18 @@ a:before {
     left: 37.5%;
 }
 
+.list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 60%;
+    left: 37.5%;
+    background-color: #2D0051;
+    color: #e4c2ff;
+}
+
 
 .down-line {
     height: 2vh;
@@ -206,4 +223,14 @@ a:before {
     object-position: center;
     font-weight: 700;
     font-size: 14px;
+}
+
+.foot-date {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    right: -400px;
+    bottom: -20px;
 }
