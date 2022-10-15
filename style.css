@@ -62,8 +62,8 @@ a:before {
 
 
 .elements {
-    background-image: url(bg_6.jpg);
-    height: 87vh;
+    background-image: url(bg_1.jpg);
+    height: 88vh;
     background-repeat: round;
     background-size: 30%;
     margin-bottom: -45px;   
@@ -169,10 +169,15 @@ a:before {
     color: #e4c2ff;
 }
 
+.footer {
+    margin-top: 5px;
+}
+
+
 
 .down-line {
     height: 2vh;
-    padding-top: 38px;
+    padding-top: 36px;
     display: flex;
     align-items: center;
     background-size: cover;

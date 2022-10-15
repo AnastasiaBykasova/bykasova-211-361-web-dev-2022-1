@@ -11,5 +11,5 @@ $list = array(
 );
 
 echo '<li><i>'.$list[0].'</i><li>'. 
-   implode('</li><li>', array_slice($list, 1, 7)).'</li></li><i>';
+   implode('</li><li>', array_slice($list, 1, 7)).'</li></li>';
 ?>

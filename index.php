@@ -23,7 +23,7 @@
                         if( $current_page ) 
                             echo $name;
                         ?></a>
-                        <a data-content="Контакты" href="#">Контакты &#9734;</a>
+                        <a data-content="Контакты" href="#go-to-footer">Контакты &#9734;</a>
                         <a data-content="Достижения" href="#">Достижения &#36;</a>
                         <!--<a data-content="Log in" href="login.php">Log in &#10149;</a>-->
                         <a data-content="Log in" href="<?php 
@@ -161,6 +161,8 @@
         </div>
     </main>
     <footer>
+        <!--<a name="go-to-footer"></a>-->
+        <a hidden class="go-to-footer" name="go-to-footer">
         <div class="down-line">
             <div class="bottom-items">
                 <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
@@ -171,6 +173,18 @@
             </div>
             <p class = "foot-date"><?php require "date.php" ?></p>
         </div>
+        </a>
+
+        <!--<div class="down-line">
+            <div class="bottom-items">
+                <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
+                <a class="text-email">&#9993; Почта:</a>
+                <a class="email" href="#">nastybykasova@gmail.com</a>
+                <a class="text-phone">&#9990; Телефон:</a>
+                <a class="number-phone" href="#">+7(999)999-99-99</a>
+            </div>
+            <p class = "foot-date"><?php require "date.php" ?></p>
+        </div>-->
     </footer>  
 </body>
 </html>

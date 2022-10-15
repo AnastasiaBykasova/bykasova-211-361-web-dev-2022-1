@@ -10,7 +10,7 @@ body {
 }
 .header {
     margin: 0px;
-    margin-bottom: -30px;
+    margin-bottom: -22px;
 }
 .nav {
     color: white;
@@ -63,13 +63,13 @@ a:before {
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
 .background-login {
-    padding-top: -10px;
-    margin: 0;
-    background-image: url(bg_1.jpg); 
+    /*padding-top: -10px;
+    margin: 0;*/
+    background-image: url(bg_1.jpg);
     height: 88vh;
     background-repeat: round;
     background-size: 30%;
-    margin-bottom: -40px;
+    margin-bottom: -45px; 
 }
 
 .container-login-form {
@@ -95,19 +95,20 @@ a:before {
     text-align: center;
 }
 
+/*
 footer {
     margin-bottom: 0;
     position: relative;
     bottom: 5px;
-}
+}*/
 
 .down-line {
+    /*padding-bottom: 2%;*/
     height: 2vh;
-    padding-top: 38px;
+    padding-top: 36px;
     display: flex;
     align-items: center;
     background-size: cover;
-    padding-bottom: 2%;
 }
 .bottom-items {
     color: white;
