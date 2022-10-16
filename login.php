@@ -24,8 +24,17 @@
                         if( $current_page ) 
                             echo $name;
                         ?></a>
-                        <a data-content="Контакты" href="#">Контакты &#9734;</a>
-                        <a data-content="Достижения" href="#">Достижения &#36;</a>
+                        <a data-content="Контакты" href="#go-to-footer">Контакты &#9734;</a>
+                        <a data-content="Достижения" href="<?php 
+                            $name='Достижения &#36;'; 
+                            $link='achievements.php'; 
+                            $current_page=true; 
+                            echo $link; ?>"> 
+                            <?php 
+                            if( $current_page ) 
+                                echo $name;
+                            ?>
+                        </a>
                         <a data-content="Log in" href="<?php 
                             $name='Log in &#10149;'; 
                             $link='login.php'; 
@@ -66,6 +75,7 @@
         
     </main>
     <footer>
+    <a name="go-to-footer"></a>
         <div class="down-line">
             <div class="bottom-items">
                 <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
@@ -73,8 +83,8 @@
                 <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
+                <a class = "foot-date" href="#"><?php require "date.php" ?></a>
             </div>
-            <p class = "foot-date"><?php require "date.php" ?></p>
         </div>
     </footer>  
 </body>

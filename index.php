@@ -14,37 +14,47 @@
             <div class="container">
                 <div class="header-line">
                     <div class="nav">
-                    <a data-content="Homepage" href="<?php 
+                        <a data-content="Homepage" href="<?php 
                             $name='Homepage &#9749;'; 
                             $link='index.php'; 
                             $current_page=true; 
-                            echo $link; 
-                        ?>"> <?php 
-                        if( $current_page ) 
-                            echo $name;
-                        ?></a>
+                            echo $link; ?>"> 
+                            <?php
+                            if( $current_page )
+                                echo $name;
+                            ?>
+                        </a>
                         <a data-content="Контакты" href="#go-to-footer">Контакты &#9734;</a>
-                        <a data-content="Достижения" href="#">Достижения &#36;</a>
-                        <!--<a data-content="Log in" href="login.php">Log in &#10149;</a>-->
+                        <a data-content="Достижения" href="<?php 
+                            $name='Достижения &#36;'; 
+                            $link='achievements.php'; 
+                            $current_page=true; 
+                            echo $link; ?>"> 
+                            <?php 
+                            if( $current_page ) 
+                                echo $name;
+                            ?>
+                        </a>
                         <a data-content="Log in" href="<?php 
                             $name='Log in &#10149;'; 
                             $link='login.php'; 
                             $current_page=true; 
-                            echo $link; 
-                        ?>"> <?php 
-                        if( $current_page ) 
-                            echo $name;
-                        ?></a>
-                        <!--<a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>-->
+                            echo $link; ?>"> 
+                            <?php 
+                            if( $current_page ) 
+                                echo $name;
+                            ?>
+                        </a>
                         <a data-content="Feedback" href="<?php 
                             $name='Feedback &#8258;'; 
                             $link='feedback.php'; 
                             $current_page=true; 
-                            echo $link; 
-                        ?>"> <?php 
-                        if( $current_page ) 
-                            echo $name;
-                        ?></a>
+                            echo $link; ?>"> 
+                            <?php 
+                            if( $current_page ) 
+                                echo $name;
+                            ?>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -69,100 +79,13 @@
                 echo '<img src = "'.$name.'" alt="Меняющаяся фотография" id = "body" height = 100px>';
                 ?>
             </div>
-
-            
-            <!--
-            <div class="bird-pic">
-                <img src="bird2.png" height="300px">
-            </div>
-            <div class="cat-pic">
-                <img src="cat.png" height="200px">
-            </div>-->
-            <!--
-            <table class="table" id="table1">
-                <caption>Список выполненных заданий (ЛР №1)</caption>
-                <thead>
-                    <tr>
-                        <th>Номер</th>
-                        <th>Условие</th>
-                        <th>Статус выполнения</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Шапка с меню (навигация по разделам)</td>
-                        <td>Done &#10004;</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                         <td>Футер с контактной информацией/копирайтом</td>
-                        <td>Done &#10004;</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Фотография и/или другие изображения</td>
-                        <td>Done &#10004;</td></tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Таблица</td>
-                        <td>Done &#10004;</td></tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Подключён шрифт с Google Fonts</td>
-                        <td>Done &#10004;</td></tr>
-                        </tbody>
-            </table>-->
-            <table class="table" id="table2">
-                <caption>Список выполненных заданий (ЛР №2)</caption>
-                <thead>
-                    <tr>
-                        <th>Номер</th>
-                        <th>Условие</th>
-                        <th>Требования</th>
-                        <th>Статус выполнения</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Доработать форму обратной связи</td>
-                        <td>
-                            <ul>
-                                <li>ФИО (текстовое);</li>
-                                <li>email (текстовое);</li>
-                                <li>откуда узнали о нас (радио-кнопки);</li>
-                                <li>тип обращения (жалоба/предложение, селектор);</li>
-                                <li>текст сообщения (большое текстовое поле);</li>
-                                <li>вложения (файл);</li>
-                                <li>даю согласие на обработку персональных данных (чекбокс)</li>
-                            </ul>
-                        </td>
-                        <td>Done &#10004;</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Сделать форму для аутентификации</td>
-                        <td>
-                            <ul>
-                                <li>логин (текстовое);</li>
-                                <li>пароль (пароль);</li>
-                                <li>"запомнить меня" (чекбокс)</li>
-                            </ul>
-                        </td>
-                        <td>Done &#10004;</td>
-                    </tr>
-                </tbody>
-            </table>
             <div class = "list">
             <?php require "list.php"?>
             </div>
-
         </div>
     </main>
     <footer>
-        <!--<a name="go-to-footer"></a>-->
-        <a hidden class="go-to-footer" name="go-to-footer">
+        <a name="go-to-footer"></a>
         <div class="down-line">
             <div class="bottom-items">
                 <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
@@ -170,21 +93,9 @@
                 <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
+                <a class = "foot-date" href="#"><?php require "date.php" ?></a>
             </div>
-            <p class = "foot-date"><?php require "date.php" ?></p>
         </div>
-        </a>
-
-        <!--<div class="down-line">
-            <div class="bottom-items">
-                <a class="my-name">&#9802; Анастасия Быкасова, 211-361</a>
-                <a class="text-email">&#9993; Почта:</a>
-                <a class="email" href="#">nastybykasova@gmail.com</a>
-                <a class="text-phone">&#9990; Телефон:</a>
-                <a class="number-phone" href="#">+7(999)999-99-99</a>
-            </div>
-            <p class = "foot-date"><?php require "date.php" ?></p>
-        </div>-->
     </footer>  
 </body>
 </html>
