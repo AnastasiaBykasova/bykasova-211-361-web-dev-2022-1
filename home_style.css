@@ -70,6 +70,9 @@ a:before {
     position:relative;
     text-align: center;
 }
+.name-fb {
+    padding-bottom: -40px;
+}
 .elements-fb {
     text-align: left;
     color: black;
@@ -78,6 +81,22 @@ a:before {
     padding-bottom: 5px;
     line-height: 1.5;
     padding-top: 5px;
+}
+.hello-fb {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+}
+.rewrite-fb {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+    position: relative;
+    padding-left: 210px;
 }
 .from-where, .appeal-text {
     line-height: 0.3em;
