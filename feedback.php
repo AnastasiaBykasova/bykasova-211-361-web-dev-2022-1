@@ -65,25 +65,25 @@
                 <h1 class="name-fb">Feedback</h1>
                 <!--<p><a class="hp-back" href="index.html"><i>На главную</i> &#8617;</a></p>-->
                 <div class="elements-fb">
-                    <p>ФИО: <input type="text" name="name-input"placeholder="Введите фамилию, имя и отчество" size="40" value="<?php if (isset($_GET['surname-input'])){
-                        echo $_GET['surname-input']; }?>"/></p>
+                    <p>ФИО: <input type="text" name="name-input"placeholder="Введите фамилию, имя и отчество" size="40" value="<?php if (isset($_GET['name-input'])){
+                        echo $_GET['name-input']; }?>"/></p>
                     <p>Email: <input type="email" name="email-input"placeholder="Введите email" size="30" value="<?php if (isset($_GET['email-input'])){
                         echo $_GET['email-input']; }?>"/></p>
                     <div class="from-where">
                         <p>Откуда узнали о нас? </p>
-                        <p><input type="radio" name="type-input" value="1" <?php if (isset($_GET['source']) & $_GET['source']='1'){
+                        <p><input type="radio" name="type-input" value="1" <?php if (isset($_GET['type-input']) & $_GET['type-input']='1'){
                         echo 'checked';}?>/>В школе/в университете/на работе</p>
-                        <p><input type="radio" name="type-input" value="2" <?php if (isset($_GET['source']) & $_GET['source']='2'){
+                        <p><input type="radio" name="type-input" value="2" <?php if (isset($_GET['type-input']) & $_GET['type-input']='2'){
                         echo 'checked';}?>/>Из социальных сетей</p>
-                        <p><input type="radio" name="type-input" value="3" <?php if (isset($_GET['source']) & $_GET['source']='3'){
+                        <p><input type="radio" name="type-input" value="3" <?php if (isset($_GET['type-input']) & $_GET['type-input']='3'){
                         echo 'checked';}?>/>От семьи/друзей/знакомых</p>
-                        <p><input type="radio" name="type-input" value="4" <?php if (isset($_GET['source']) & $_GET['source']='4'){
+                        <p><input type="radio" name="type-input" value="4" <?php if (isset($_GET['type-input']) & $_GET['type-input']='4'){
                         echo 'checked';}?>/>Из рекламы</p>
                     </div>
                     <p>Тип обращения: 
-                    <select sixe="1" name="letter-type" id="letter-type">
-                        <option value=”1”>Предложение</option>
-                        <option value=”2”>Жалоба</option>                        
+                    <select size="1" name="letter-type" id="letter-type">
+                        <option value="1">Предложение</option>
+                        <option value="2">Жалоба</option>                        
                     </select></p>
                     <div class="appeal-text">
                         <p>Текст сообщения: </p>
@@ -91,7 +91,7 @@
                     </div>
                     <p>Вложения: <input type="file" name="file-input" multiple></p>
                     <p>Даю согласие на обработку персональных данных <input type="checkbox"></p>
-                    <p><div class="send-button"><input type="submit"></div></p>
+                    <p><div class="buttons"><input type="reset"><input type="submit"></div></p>
                 </div>
             </form>
             </div>

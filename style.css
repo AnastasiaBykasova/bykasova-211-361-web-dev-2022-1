@@ -85,6 +85,47 @@ a:before {
     background-color: #2D0051;
     color: #e4c2ff;
 }
+
+.math-js-pow {
+    margin: 0 5%;
+    padding-left: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: 240px;
+    left: 10px;
+    background-color: #e4c2ff;
+    background-size: cover;
+    width: 40%;
+}
+.pow_form {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.math-js-gcd {
+    margin: 0 5%;
+    padding-left: 0px;
+    padding-top: 0px;
+    position: absolute;
+    top: 290px;
+    right: 10px;
+    background-color: #e4c2ff;
+    background-size: cover;
+    width: 40%;
+}
+.gcd_form {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.buttons {
+    text-align: left;
+}
+
 .footer {
     margin-top: 5px;
 }

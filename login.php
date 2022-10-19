@@ -21,7 +21,7 @@
                             $current_page=true; 
                             echo $link; 
                         ?>"> <?php 
-                        if( $current_page ) 
+                        if( $current_page )
                             echo $name;
                         ?></a>
                         <a data-content="Контакты" href="#go-to-footer">Контакты &#9734;</a>
@@ -67,7 +67,7 @@
                     <p>Login: <input type="text" name="log-name"placeholder="Enter login" size="18"/></p>
                     <p>Password: <input type="password" name="pass-name"placeholder="Enter password" size="18"/></p>
                     <p>Remember me <input type="checkbox"></p>
-                    <p><div class="send-button"><input type="submit"></div></p>
+                    <p><div class="buttons"><input type="reset"><input type="submit"></div></p>
                 </div>
             </form>
             </div>
