@@ -53,6 +53,8 @@
                         if( $current_page ) 
                             echo $name;
                         ?></a>
+                        <a data-content="Вычисления" href="math.php">Вычисления</a>
+                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +63,7 @@
     <main>
         <div class="background-fb">
             <div class="container-fb-form">
-            <form class="feedback_form" action="home.php" method="post" name="feedback_form">
+            <form class="feedback_form" action="home.php" autocomplete="off" method="post" name="feedback_form">
                 <h1 class="name-fb">Feedback</h1>
                 <!--<p><a class="hp-back" href="index.html"><i>На главную</i> &#8617;</a></p>-->
                 <div class="elements-fb">
@@ -75,8 +77,7 @@
                         echo 'checked';}?>/>В школе/в университете/на работе</p>
                         <p><input type="radio" name="type-input" value="2" <?php if (isset($_GET['type-input']) & $_GET['type-input']='2'){
                         echo 'checked';}?>/>Из социальных сетей</p>
-                        <p><input type="radio" name="type-input" value="3" <?php if (isset($_GET['type-input']) & $_GET['type-input']='3'){
-                        echo 'checked';}?>/>От семьи/друзей/знакомых</p>
+                        
                         <p><input type="radio" name="type-input" value="4" <?php if (isset($_GET['type-input']) & $_GET['type-input']='4'){
                         echo 'checked';}?>/>Из рекламы</p>
                     </div>

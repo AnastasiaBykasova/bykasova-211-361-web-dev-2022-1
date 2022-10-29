@@ -55,6 +55,8 @@
                                 echo $name;
                             ?>
                         </a>
+                        <a data-content="Вычисления" href="math.php">Вычисления</a>
+                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
                     </div>
                 </div>
             </div>
@@ -79,41 +81,15 @@
                 echo '<img src = "'.$name.'" alt="Меняющаяся фотография" id = "body" height = 100px>';
                 ?>
             </div>
-
             <div class = "list">
             <?php require "list.php"?>
             </div>
-
-            <div class="database-terms">
-            </div>
-
-            <div class="math-js-pow">
-            <form class="pow_form" method="post" name="pow_form">
-                <h1>Возведение числа x в степень n</h1>
-                <div class="pow">
-                    <p>Введите число x: <input type="text" name="pow-x" placeholder="Enter x" size="18" value="<?php if (isset($_GET['pow-x'])){
-                        echo $_GET['pow-x']; }?>"/></p>
-                    <p>Введите число n: <input type="text" name="pow-n" placeholder="Enter n" size="18" value="<?php if (isset($_GET['pow-n'])){
-                        echo $_GET['pow-n']; }?>"/></p>
-                    <p><div class="buttons"><input type="reset"><input type="submit"></div></p>
-                </div>
-            </form>
-            </div>
-
-            <div class="math-js-gcd">
-            <form class="gcd_form" method="post" name="gcd_form">
-                <h1>Нахождение НОД</h1>
-                <div class="gcd">
-                    <p>Введите число a: <input type="text" name="pow-a" placeholder="Enter a" size="18" value="<?php if (isset($_GET['pow-a'])){
-                        echo $_GET['pow-a']; }?>"/></p>
-                    <p>Введите число b: <input type="text" name="pow-b" placeholder="Enter b" size="18" value="<?php if (isset($_GET['pow-b'])){
-                        echo $_GET['pow-b']; }?>"/></p>
-                    <p><div class="buttons"><input type="reset"><input type="submit"></div></p>
-                </div>
-            </form>
-            </div>
-
-
+            
+            <!--<div class = "table">
+                <table class="table_db">
+                <?php //require "table.php" ?>
+                </table>
+            </div>-->
         </div>
     </main>
     <footer>
@@ -129,6 +105,5 @@
             </div>
         </div>
     </footer>  
-    <script src="math.js"></script>
 </body>
 </html>

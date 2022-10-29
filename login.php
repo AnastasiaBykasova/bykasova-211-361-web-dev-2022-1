@@ -53,6 +53,8 @@
                         if( $current_page ) 
                             echo $name;
                         ?></a>
+                        <a data-content="Вычисления" href="math.php">Вычисления</a>
+                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
                     </div>
                 </div>
             </div>

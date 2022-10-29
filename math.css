@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    /*overflow: hidden;*/
     background-color: #2D0051;
 }
 .header {
@@ -53,37 +52,10 @@ a:before {
 }
 .elements {
     background-image: url(bg_1.jpg);
-    height:200vh;
+    height: 88vh;
     background-repeat: round;
     background-size: 30%;
     margin-bottom: -45px;
-}
-.text-desc {
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute;
-    left: 10%;
-    top: 14%;
-    background-color: #2D0051;
-    color: #e4c2ff;
-}
-.pictures-hp {
-    position: absolute;
-    /*top: 400px;*/
-    top: 20%;
-    left: 43%;
-    transform: rotate(-30deg)
-}
-.list {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    position: absolute;
-    top: 14%;
-    right: 4.5%;
-    background-color: #2D0051;
-    color: #e4c2ff;
 }
 .footer {
     margin-top: 5px;
