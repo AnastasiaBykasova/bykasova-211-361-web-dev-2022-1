@@ -57,6 +57,7 @@
                         </a>
                         <a data-content="Math-functions" href="math.php">Math-functions</a>
                         <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
+                        <a data-content="Interesting" href="clock.html">Interesting</a>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box }
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
-    background-color: #2D0051;
+    /*overflow: hidden;*/
+    background-color: black;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 .header {
     margin: 0px;
@@ -52,80 +56,74 @@ a:before {
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
 .elements {
-    background-image: url(bg_1.jpg);
-    height: 88vh;
+    background-image: url(black.jpg);
+    height: 200vh;
     background-repeat: round;
     background-size: 30%;
     margin-bottom: -45px;
+    margin: 200px;
 }
-.calc-pic {
-    position: absolute;
-    top: 100px;
-    left: 590px;
+
+.clock {
+  display: flex; 
+  gap: calc(var(--segment-length) / 2);
+  --segment-width: 2vmin;
+  --segment-length: 6vmin;
+  --segment-gap: .75vmin;
+  --segment-color: #1D1E22;
+  --segment-color-active: red;
+  --colon-color: white;
+  transform: skew(-15deg)
 }
-.out-result {
-    font-size: 20px;
-    position: relative;
-    top: 130px;
-    left: 650px;
+.colon {
+  display: grid;
+  width: var(--segment-width);
+  gap: var(--segment-width);
+  align-self: center;
 }
-.key_digit_1, .key_digit_2, .key_digit_3, .key_digit_4,
-.key_digit_5, .key_digit_6, .key_digit_7, .key_digit_8,
-.key_digit_9, .key_digit_coma, .key_digit_0, .key_operation_sub, 
-.key_operation_mult, .key_operation_div, .key_bracket_l, 
-.key_bracket_r, .key_result, .key_clear {
-    border-color: rgb(102, 0, 204) rgb(102, 0, 204) rgb(102, 0, 204) rgb(102, 0, 204);
-    width: 52px;
-    height: 44px;
+.colon::before, .colon::after{
+  content: "";
+  aspect-ratio: 1;
+  background-color: var(--colon-color);
+  border-radius: 50%;
 }
-.line_1 {
-    position: relative;
-    top: 187px;
-    left: 629px;
+.digit {
+  display: grid;
+  gap: var(--segment-gap);
+  grid-template:
+    '.... r1c2 ....' var(--segment-width)
+    'r2c1 .... r2c3' var(--segment-length)
+    '.... r3c2 ....' var(--segment-width)
+    'r4c1 .... r4c3' var(--segment-length)
+    '.... r5c2 ....' var(--segment-width) /
+    var(--segment-width) var(--segment-length) var(--segment-width)
 }
-.key_bracket_r, .key_clear, .key_operation_div {
-    margin-left: 16px;
+.digit > div {
+  grid-area: var(--ga);
+  position: relative;
 }
-.line_2 {
-    position: relative;
-    top: 206px;
-    left: 629px;
+.digit > div::after{
+  content: "";
+  position: absolute;
+  background: var(--bg, var(--segment-color));
+  --i: calc(var(--segment-width) * -.5);
+  inset: var(--inset, var(--i) 0);
+  --p1: calc(var(--segment-width) / 2);
+  --p2: calc(100% - var(--segment-width) / 2);
+  clip-path: var(--clip, polygon( 50% 0, 100% var(--p1), 100% var(--p2), 50% 100%, 0% var(--p2), 0% var(--p1) ))
 }
-.key_digit_8, .key_digit_9, .key_operation_mult {
-    margin-left: 16px;
+.digit > div:nth-child(3n+1)::after{  
+  --inset: 0 var(--i);
+  --clip: polygon(var(--p1) 0, var(--p2) 0, 100% 50%, var(--p2) 100%, var(--p1) 100%, 0 50%);
 }
-.line_3 {
-    position: relative;
-    top: 225px;
-    left: 629px;
+
+.digit > div[data-active="1"] {
+  filter: drop-shadow(0 0 0.75vmin var(--segment-color-active));
 }
-.key_digit_5, .key_digit_6, .key_operation_sub {
-    margin-left: 16px;
+.digit > div[data-active="1"]::after{
+  background-color: var(--segment-color-active);
 }
-.line_4 {
-    position: relative;
-    top: 244px;
-    left: 629px;
-}
-.key_digit_2, .key_digit_3 {
-    margin-left: 16px;
-}
-.line_5 {
-    position: relative;
-    top: 263px;
-    left: 629px;
-}
-.key_digit_0, .key_result {
-    margin-left: 16px;
-}
-.key_operation_add {
-    border-color: rgb(102, 0, 204) rgb(102, 0, 204) rgb(102, 0, 204) rgb(102, 0, 204);
-    width: 52px;
-    height: 107px;
-    position: relative;
-    top: 156px;
-    left: 845px;
-}
+
 
 
 .footer {
