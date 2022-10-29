@@ -24,9 +24,9 @@
                                 echo $name;
                             ?>
                         </a>
-                        <a data-content="Контакты" href="#go-to-footer">Контакты &#9734;</a>
-                        <a data-content="Достижения" href="<?php 
-                            $name='Достижения &#36;'; 
+                        <a data-content="Contacts" href="#go-to-footer">Contacts &#9734;</a>
+                        <a data-content="Achievements" href="<?php 
+                            $name='Achievements &#36;'; 
                             $link='achievements.php'; 
                             $current_page=true; 
                             echo $link; ?>"> 
@@ -55,7 +55,7 @@
                                 echo $name;
                             ?>
                         </a>
-                        <a data-content="Вычисления" href="math.php">Вычисления</a>
+                        <a data-content="Math-functions" href="math.php">Math-functions</a>
                         <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
                     </div>
                 </div>
