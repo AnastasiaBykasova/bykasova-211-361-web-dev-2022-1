@@ -62,6 +62,12 @@ a:before {
     position: absolute;
     top: 100px;
     left: 590px;
+    z-index: -0.9;
+}
+#out_screen {
+    position: absolute;
+    top: 150px;
+    left: 630px;
 }
 
 .key_bracket, .key_clear, .key_operation, 
@@ -69,56 +75,85 @@ a:before {
     color: #6600CC;
     width: 52px;
     height: 44px;
-}
-#b_l, #b_r, #b_c, #o_d, #d_8, #d_9, 
-#o_m, #d_5, #d_6, #o_s, #d_2, #d_3, #d_0 {
-    margin-left: 16px;
+    position: absolute;
+    z-index: 1;
 }
 
-#b_l, #b_r, #b_c, #o_d {
-    position: relative;
-    top: 171px;
-    left:613px;
-}
-#o_m {
-    position: relative;
-    top: 234px;
-    left: 540px;
-}
-#o_s {
-    position: relative;
-    top: 297px;
-    left: 468px;
-}
-#d_7, #d_8, #d_9 {
-    position: relative;
-    top: 278px;
-    left: 228px;
-}
-#d_4, #d_5, #d_6 {
-    position: relative;
-    top: 341px;
-    left: 428px;
-}
-#d_1, #d_2, #d_3 {
-    position: relative;
-    top: 404px;
+#b_c {
+    top: 265px;
     left: 629px;
 }
-#d_c, #d_0 {
-    position: relative;
-    top: 467px;
-    left: 27px;
+#b_l {
+    top: 265px;
+    left: 701px;
+}
+#b_r {
+    top: 265px;
+    left: 773px;
+}
+#o_d {
+    top: 265px;
+    left: 845px;
+}
+#d_7 {
+    top: 328px;
+    left: 629px;
+}
+#d_8 {
+    top: 328px;
+    left: 701px;
+}
+#d_9 {
+    top: 328px;
+    left: 773px;
+}
+#o_m {
+    top: 328px;
+    left: 845px;
+}
+#d_4 {
+    top: 391px;
+    left: 629px;
+}
+#d_5 {
+    top: 391px;
+    left: 701px;
+}
+#d_6 {
+    top: 391px;
+    left: 773px;
+}
+#o_s {
+    top: 391px;
+    left: 845px;
+}
+#d_1 {
+    top: 454px;
+    left: 629px;
+}
+#d_2 {
+    top: 454px;
+    left: 701px;
+}
+#d_3 {
+    top: 454px;
+    left: 773px;
+}
+#d_c {
+    top: 517px;
+    left: 629px;
+}
+#d_0 {
+    top: 517px;
+    left: 701px;
 }
 #bt_r {
-    position: relative;
-    top: 424px;
-    left: 341px;
+    top: 517px;
+    left: 773px;
 }
 #o_a {
     width: 52px;
     height: 107px;
-    position: absolute;
     top: 454px;
     left: 845px;
 }
@@ -192,9 +227,14 @@ a:before {
     object-position: center;
 }
 
-.messege {
+.result {
     display: none;
 }
-.messege1 {
+
+.out_screen {
+    display: none;
+}
+
+.screen_digit, .screen_oper, .screen_bracket, .screen_clear, .screen_result {
     display: block;
 }

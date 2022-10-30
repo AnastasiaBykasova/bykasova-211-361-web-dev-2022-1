@@ -119,18 +119,22 @@ function evaluate(str) {
 // не назначать обработчик для каждой кнопки в отдельности.
 //6
 function clickHandler(event) {
+    
 
     let digit_press = document.querySelectorAll('.key_digit');
     digit_press.forEach(function(element_d){
-        element_d.addEventListener('click', function () {     
+        element_d.addEventListener('click', function() {     
             //alert('digit');
+            //answer_screen.classList.add('screen_digit');
+            document.getElementById('out_screen').value = this.value;
       });
     });
 
     let oper_press = document.querySelectorAll('.key_operation');
     oper_press.forEach(function(element_o){
-        element_o.addEventListener('click', function () {     
+        element_o.addEventListener('click', function() {     
             //alert('operation');
+            document.getElementById('out_screen').value = this.value;
       });
     });
 
@@ -141,7 +145,7 @@ function clickHandler(event) {
 
     let bracket_press = document.querySelectorAll('.key_bracket');
     bracket_press.forEach(function(element_b){
-        element_b.addEventListener('click', function () {     
+        element_b.addEventListener('click', function() {     
             //alert('bracket');
       });
     });

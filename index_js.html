@@ -37,33 +37,35 @@
             </div>
             <div class="calc-container">
                 <div class="screen">
-                    <span></span>
+                    <!--<span></span>
                     <output></output>
+                    <div class="result">12</div>-->
+                    <textarea id="out_screen" rows="5" cols="33" wrap="soft" onclick="paste()" disabled></textarea>
                 </div>
                 <div class="buttons">
                     <div class="digits">
-                        <button class="key_digit" id="d_1">1</button>
-                        <button class="key_digit" id="d_2">2</button>
-                        <button class="key_digit" id="d_3">3</button>
-                        <button class="key_digit" id="d_4">4</button>
-                        <button class="key_digit" id="d_5">5</button>
-                        <button class="key_digit" id="d_6">6</button>
-                        <button class="key_digit" id="d_7">7</button>
-                        <button class="key_digit" id="d_8">8</button>
-                        <button class="key_digit" id="d_9">9</button>
-                        <button class="key_digit" id="d_c">.</button>
-                        <button class="key_digit" id="d_0">0</button>
-                        <button class="key" style="visibility: hidden;" id="b_hidden"></button>
+                        <button class="key_digit" id="d_1" value="1">1</button>
+                        <button class="key_digit" id="d_2" value="2">2</button>
+                        <button class="key_digit" id="d_3" value="3">3</button>
+                        <button class="key_digit" id="d_4" value="4">4</button>
+                        <button class="key_digit" id="d_5" value="5">5</button>
+                        <button class="key_digit" id="d_6" value="6">6</button>
+                        <button class="key_digit" id="d_7" value="7">7</button>
+                        <button class="key_digit" id="d_8" value="8">8</button>
+                        <button class="key_digit" id="d_9" value="9">9</button>
+                        <button class="key_digit" id="d_c" value=".">.</button>
+                        <button class="key_digit" id="d_0" value="0">0</button>
+                        <button class="key" style="visibility: hidden;" id="b_hidden" value=""></button>
                     </div>
                     <div class="other">
-                        <button class="key_operation" id="o_a">+</button>
-                        <button class="key_clear" id="b_c">C</button>
-                        <button class="key_bracket" id="b_l">(</button>
-                        <button class="key_bracket" id="b_r">)</button>
-                        <button class="key_operation" id="o_d">/</button>
-                        <button class="key_operation" id="o_m">*</button>
-                        <button class="key_operation" id="o_s">-</button>
-                        <button class="key_result" id="bt_r">=</button>
+                        <button class="key_operation" id="o_a" value="+">+</button>
+                        <button class="key_clear" id="b_c" value="C">C</button>
+                        <button class="key_bracket" id="b_l" value="(">(</button>
+                        <button class="key_bracket" id="b_r" value=")">)</button>
+                        <button class="key_operation" id="o_d" value="/">/</button>
+                        <button class="key_operation" id="o_m" value="*">*</button>
+                        <button class="key_operation" id="o_s" value="-">-</button>
+                        <button class="key_result" id="bt_r" value="=">=</button>
                     </div>
                 </div>
             </div>
