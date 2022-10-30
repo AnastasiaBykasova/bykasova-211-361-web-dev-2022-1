@@ -1,7 +1,7 @@
 // Функция priority позволяет получить 
 // значение приоритета для оператора.
 // Возможные операторы: +, -, *, /.
-
+//1
 function priority(operation) {
     if (operation == '+' || operation == '-') {
         return 1;
@@ -11,16 +11,19 @@ function priority(operation) {
 }
 
 // Проверка, является ли строка str числом.
+//2.1
 function isNumeric(str) {
     return /^\d+(.\d+){0,1}$/.test(str);
 }
 
 // Проверка, является ли строка str цифрой.
+//2.2
 function isDigit(str) {
     return /^\d{1}$/.test(str);
 }
 
 // Проверка, является ли строка str оператором.
+//2.3
 function isOperation(str) {
     return /^[\+\-\*\/]{1}$/.test(str);
 }
@@ -29,7 +32,7 @@ function isOperation(str) {
 // с арифметическим выражением и делит его на токены 
 // (числа, операторы, скобки). Возвращаемое значение --
 // массив токенов.
-
+//3
 function tokenize(str) {
     let tokens = [];
     let lastNumber = '';
@@ -62,7 +65,7 @@ function tokenize(str) {
 // +, -, *, /, а также скобки. Все операторы бинарны и левоассоциативны.
 // Функция реализует алгоритм сортировочной станции 
 // (https://ru.wikipedia.org/wiki/Алгоритм_сортировочной_станции).
-
+//4
 function compile(str) {
     let out = [];
     let stack = [];
@@ -96,7 +99,7 @@ function compile(str) {
 // действительные числа и операторы +, -, *, /.
 // Вам нужно реализовать эту функцию
 // (https://ru.wikipedia.org/wiki/Обратная_польская_запись#Вычисления_на_стеке).
-
+//5
 function evaluate(str) {
     // your code here
 }
@@ -114,13 +117,147 @@ function evaluate(str) {
 // Реализуйте эту функцию. Воспользуйтесь механизмом делегирования 
 // событий (https://learn.javascript.ru/event-delegation), чтобы 
 // не назначать обработчик для каждой кнопки в отдельности.
-
+//6
 function clickHandler(event) {
-    // your code here
-}
+
+    let digit_press = document.querySelectorAll('.key_digit');
+    digit_press.forEach(function(element_d){
+        element_d.addEventListener('click', function () {     
+            //alert('digit');
+      });
+    });
+
+    let oper_press = document.querySelectorAll('.key_operation');
+    oper_press.forEach(function(element_o){
+        element_o.addEventListener('click', function () {     
+            //alert('operation');
+      });
+    });
+
+    let click_clear = document.getElementById('b_c');
+    click_clear.onclick = function() {
+        //alert("clear");
+    }
+
+    let bracket_press = document.querySelectorAll('.key_bracket');
+    bracket_press.forEach(function(element_b){
+        element_b.addEventListener('click', function () {     
+            //alert('bracket');
+      });
+    });
+
+    let click_result = document.getElementById('bt_r');
+    click_result.onclick = function() {
+        //alert("result");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    let click_1 = document.getElementById('d_1');
+    click_1.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_2 = document.getElementById('d_2');
+    click_2.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_3 = document.getElementById('d_3');
+    click_3.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_4 = document.getElementById('d_4');
+    click_4.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_5 = document.getElementById('d_5');
+    click_5.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_6 = document.getElementById('d_6');
+    click_6.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_7 = document.getElementById('d_7');
+    click_7.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_8 = document.getElementById('d_8');
+    click_8.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_9 = document.getElementById('d_9');
+    click_9.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_0 = document.getElementById('d_0');
+    click_0.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_coma = document.getElementById('d_c');
+    click_coma.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_clear = document.getElementById('b_c');
+    click_clear.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_bl = document.getElementById('b_l');
+    click_bl.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_br = document.getElementById('b_r');
+    click_br.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_add = document.getElementById('o_a');
+    click_add.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_sub = document.getElementById('o_s');
+    click_sub.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_mult = document.getElementById('o_m');
+    click_mult.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_div = document.getElementById('o_d');
+    click_div.onclick = function() {
+        alert("кнопка нажата");
+    }
+    let click_result = document.getElementById('bt_r');
+    click_result.onclick = function() {
+        alert("кнопка нажата");
+    }
+    */
+    
+};
+    
+    
+
 
 
 // Назначьте нужные обработчики событий.
+//7
 window.onload = function () {
+
     // your code here
 }
+
+
+//const output = document.querySelector('output')
+clickHandler();

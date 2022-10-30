@@ -63,59 +63,63 @@ a:before {
     top: 100px;
     left: 590px;
 }
-.key_digit_1, .key_digit_2, .key_digit_3, .key_digit_4,
-.key_digit_5, .key_digit_6, .key_digit_7, .key_digit_8,
-.key_digit_9, .key_digit_coma, .key_digit_0, .key_operation_sub, 
-.key_operation_mult, .key_operation_div, .key_bracket_l, 
-.key_bracket_r, .key_result, .key_clear {
+
+.key_bracket, .key_clear, .key_operation, 
+.key_digit, .key_result {
+    color: #6600CC;
     width: 52px;
     height: 44px;
 }
-.line_1 {
-    position: relative;
-    top: 215px;
-    left: 629px;
-}
-.key_bracket_r, .key_clear, .key_operation_div {
+#b_l, #b_r, #b_c, #o_d, #d_8, #d_9, 
+#o_m, #d_5, #d_6, #o_s, #d_2, #d_3, #d_0 {
     margin-left: 16px;
 }
-.line_2 {
+
+#b_l, #b_r, #b_c, #o_d {
+    position: relative;
+    top: 171px;
+    left:613px;
+}
+#o_m {
     position: relative;
     top: 234px;
-    left: 629px;
+    left: 540px;
 }
-.key_digit_8, .key_digit_9, .key_operation_mult {
-    margin-left: 16px;
-}
-.line_3 {
+#o_s {
     position: relative;
-    top: 253px;
-    left: 629px;
+    top: 297px;
+    left: 468px;
 }
-.key_digit_5, .key_digit_6, .key_operation_sub {
-    margin-left: 16px;
-}
-.line_4 {
+#d_7, #d_8, #d_9 {
     position: relative;
-    top: 272px;
-    left: 629px;
+    top: 278px;
+    left: 228px;
 }
-.key_digit_2, .key_digit_3 {
-    margin-left: 16px;
-}
-.line_5 {
+#d_4, #d_5, #d_6 {
     position: relative;
-    top: 291px;
+    top: 341px;
+    left: 428px;
+}
+#d_1, #d_2, #d_3 {
+    position: relative;
+    top: 404px;
     left: 629px;
 }
-.key_digit_0, .key_result {
-    margin-left: 16px;
+#d_c, #d_0 {
+    position: relative;
+    top: 467px;
+    left: 27px;
 }
-.key_operation_add {
+#bt_r {
+    position: relative;
+    top: 424px;
+    left: 341px;
+}
+#o_a {
     width: 52px;
     height: 107px;
-    position: relative;
-    top: 184px;
+    position: absolute;
+    top: 454px;
     left: 845px;
 }
 
@@ -186,4 +190,11 @@ a:before {
     right: -410px;
     
     object-position: center;
+}
+
+.messege {
+    display: none;
+}
+.messege1 {
+    display: block;
 }
