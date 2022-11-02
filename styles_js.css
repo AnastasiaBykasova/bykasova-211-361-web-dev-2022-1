@@ -68,10 +68,12 @@ a:before {
     position: absolute;
     top: 150px;
     left: 630px;
+    opacity: 70%;
 }
 
-.key_bracket, .key_clear, .key_operation, 
+.key_bracket, .key_clear, .key_operation,
 .key_digit, .key_result {
+    cursor: pointer;
     color: #6600CC;
     width: 52px;
     height: 44px;
@@ -79,7 +81,7 @@ a:before {
     z-index: 1;
 }
 
-#b_c {
+#b_c_all {
     top: 265px;
     left: 629px;
 }
@@ -156,6 +158,13 @@ a:before {
     height: 107px;
     top: 454px;
     left: 845px;
+}
+#b_c_one {
+    width: 269px;
+    height: 27px;
+    position: absolute;
+    top: 579px;
+    left: 629px;
 }
 
 
@@ -237,4 +246,13 @@ a:before {
 
 .screen_digit, .screen_oper, .screen_bracket, .screen_clear, .screen_result {
     display: block;
+}
+
+h6 {
+    font-family: 'Island Moments', cursive;
+    font-size: 26px;
+    color: #6600CC;
+    position: absolute;
+    top: 50px;
+    left: 725px;
 }

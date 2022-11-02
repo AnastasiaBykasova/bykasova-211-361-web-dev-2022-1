@@ -99,7 +99,7 @@ function compile(str) {
 // действительные числа и операторы +, -, *, /.
 // Вам нужно реализовать эту функцию
 // (https://ru.wikipedia.org/wiki/Обратная_польская_запись#Вычисления_на_стеке).
-//5
+//6
 function evaluate(str) {
     // your code here
 }
@@ -117,10 +117,127 @@ function evaluate(str) {
 // Реализуйте эту функцию. Воспользуйтесь механизмом делегирования 
 // событий (https://learn.javascript.ru/event-delegation), чтобы 
 // не назначать обработчик для каждой кнопки в отдельности.
-//6
+//5
 function clickHandler(event) {
+
+    let press_1 = document.querySelectorAll('.key_digit,.key_operation,.key_bracket');
+    let string_enter = "";
+    press_1.forEach(function(element){
+        element.addEventListener('click', function() {   
+            string_enter += this.value;  
+            document.getElementById('out_screen').value = string_enter;
+            //alert("Введено " + this.value);
+        });
+        
+    });
+
     
 
+    /*
+    let press_2 = document.querySelectorAll('.key_clear');
+    press_2.forEach(function(element){
+        element.addEventListener('click', function() {   
+             string_enter = "";
+             document.getElementById('out_screen').value = string_enter;
+        });
+        
+    });*/
+
+    let click_clear_all = document.getElementById('b_c_all');
+    click_clear_all.onclick = function() {
+        string_enter = "";
+        document.getElementById('out_screen').value = string_enter;
+    }
+    let click_clear = document.getElementById('b_c_one');
+    click_clear.onclick = function() {
+        string_enter = string_enter.replace(/.$/, "");
+        document.getElementById('out_screen').value = string_enter;
+    }
+
+
+    let press_2 = document.querySelectorAll('.key_digit,.key_operation,.key_bracket');
+    press_2.forEach(function(element){
+        element.addEventListener('click', function() {   
+            //string_enter += this.value;  
+            //document.getElementById('out_screen').value = string_enter;
+            //alert("Введено " + this.value);
+            
+        });
+        
+    });
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    let digit_press = document.querySelectorAll('.key_digit');
+    digit_press.forEach(function(element_d){
+        element_d.addEventListener('click', function() {     
+            window.onload = function() {
+                function strPad() {
+                    document.getElementById('out_screen').value = this.value;
+                }
+                let bt = document.getElementsByClassName("key_digit");
+                for (let i = 0; i < bt.length; i++) {
+                    bt[i].onclick = strPad;
+                }
+              }
+            //alert('digit');
+            //answer_screen.classList.add('screen_digit');
+      });
+    });*/
+    
+    /*
+    let digit_press = document.querySelectorAll('.key_digit');
+    digit_press.forEach(function(element_d){
+        element_d.addEventListener('click', function() {     
+            //alert('digit');
+            //answer_screen.classList.add('screen_digit');
+            let str_digit = "";
+            str_digit += this.value;
+            document.getElementById('out_screen').value = str_digit;
+        });
+    });*/
+
+
+    /*
     let digit_press = document.querySelectorAll('.key_digit');
     digit_press.forEach(function(element_d){
         element_d.addEventListener('click', function() {     
@@ -128,8 +245,9 @@ function clickHandler(event) {
             //answer_screen.classList.add('screen_digit');
             document.getElementById('out_screen').value = this.value;
       });
-    });
+    });*/
 
+    /*
     let oper_press = document.querySelectorAll('.key_operation');
     oper_press.forEach(function(element_o){
         element_o.addEventListener('click', function() {     
@@ -147,14 +265,22 @@ function clickHandler(event) {
     bracket_press.forEach(function(element_b){
         element_b.addEventListener('click', function() {     
             //alert('bracket');
+            
       });
     });
 
     let click_result = document.getElementById('bt_r');
     click_result.onclick = function() {
         //alert("result");
-    }
+    }*/
 
+    let click_result = document.getElementById('bt_r');
+    click_result.onclick = function() {
+        string_enter += this.value;  
+        document.getElementById('out_screen').value = string_enter;
+        let outt = $('#textarea').val();
+        alert(outt);
+    }
 
 
 

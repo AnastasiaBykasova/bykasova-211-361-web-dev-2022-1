@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/styles.css">
     <script src="main_js.js" defer></script>
@@ -33,13 +34,11 @@
     <main>
         <div class="elements">
             <div class="calc-pic">
-                <img src="calc_1.jpg" height="500px">
+                <img src="calc_2.jpg" height="536px">
             </div>
+            <h6>calculator</h6>
             <div class="calc-container">
                 <div class="screen">
-                    <!--<span></span>
-                    <output></output>
-                    <div class="result">12</div>-->
                     <textarea id="out_screen" rows="5" cols="33" wrap="soft" onclick="paste()" disabled></textarea>
                 </div>
                 <div class="buttons">
@@ -59,13 +58,14 @@
                     </div>
                     <div class="other">
                         <button class="key_operation" id="o_a" value="+">+</button>
-                        <button class="key_clear" id="b_c" value="C">C</button>
+                        <button class="key_clear" id="b_c_all" value="C">C</button>
                         <button class="key_bracket" id="b_l" value="(">(</button>
                         <button class="key_bracket" id="b_r" value=")">)</button>
                         <button class="key_operation" id="o_d" value="/">/</button>
                         <button class="key_operation" id="o_m" value="*">*</button>
                         <button class="key_operation" id="o_s" value="-">-</button>
                         <button class="key_result" id="bt_r" value="=">=</button>
+                        <button class="key_clear" id="b_c_one" value="CE">CE</button>
                     </div>
                 </div>
             </div>
