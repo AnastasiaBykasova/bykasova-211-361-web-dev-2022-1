@@ -168,6 +168,14 @@ function clickHandler(event) {
 
 
     
+    let click_result = document.getElementById('bt_r');
+    click_result.onclick = function() {
+        string_enter += this.value;  
+        document.getElementById('out_screen').value = string_enter;
+        //alert(string_enter);
+        alert(compile(string_enter));
+    }
+
     
 
 
@@ -273,14 +281,6 @@ function clickHandler(event) {
     click_result.onclick = function() {
         //alert("result");
     }*/
-
-    let click_result = document.getElementById('bt_r');
-    click_result.onclick = function() {
-        string_enter += this.value;  
-        document.getElementById('out_screen').value = string_enter;
-        let outt = $('#textarea').val();
-        alert(outt);
-    }
 
 
 
@@ -391,3 +391,7 @@ window.onload = function () {
 
 //const output = document.querySelector('output')
 clickHandler();
+
+
+
+

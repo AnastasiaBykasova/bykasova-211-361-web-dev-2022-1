@@ -52,7 +52,7 @@ a:before {
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
 .elements {
-    background-image: url(bg_1.jpg);
+    background-image: url(bg_1_1.jpg);
     height: 88vh;
     background-repeat: round;
     background-size: 30%;
@@ -63,6 +63,14 @@ a:before {
     top: 100px;
     left: 590px;
     z-index: -0.9;
+}
+h6 {
+    font-family: 'Island Moments', cursive;
+    font-size: 26px;
+    color: #6600CC;
+    position: absolute;
+    top: 50px;
+    left: 725px;
 }
 #out_screen {
     position: absolute;
@@ -236,23 +244,5 @@ a:before {
     object-position: center;
 }
 
-.result {
-    display: none;
-}
 
-.out_screen {
-    display: none;
-}
 
-.screen_digit, .screen_oper, .screen_bracket, .screen_clear, .screen_result {
-    display: block;
-}
-
-h6 {
-    font-family: 'Island Moments', cursive;
-    font-size: 26px;
-    color: #6600CC;
-    position: absolute;
-    top: 50px;
-    left: 725px;
-}
