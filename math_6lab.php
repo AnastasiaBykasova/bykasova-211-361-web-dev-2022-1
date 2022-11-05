@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="math.css">
+    <link rel="stylesheet" href="math_6lab.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
-    <?php require "name.php"; ?>
+    <title>Functions</title>
 </head>
 <body>
     <header> 
@@ -14,13 +14,14 @@
             <div class="container">
                 <div class="header-line">
                     <div class="nav">
-                    <a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>
+                        <a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>
                         <a data-content="Contacts" href="#go-to-footer">Contacts &#9734;</a>
                         <a data-content="Achievements" href="achievements.php">Achievements &#36;</a>
                         <a data-content="Log in" href="login.php">Log in &#10149;</a>
                         <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
-                        <a data-content="Math-functions" href="math.php">Math-functions</a>
-                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
+                        <a data-content="Math-functions" id="functions" href="math_6lab.php">Math-functions &#9731;</a>
+                        <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
+                        <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                     </div>
                 </div>
             </div>
@@ -28,6 +29,9 @@
     </header>
     <main>
         <div class="elements">
+            <div class="congrats_pic">
+                <img src="congrats.jpg" alt="картинка" height="500px">
+            </div>
             <div class="answers">
             <script>
 
@@ -147,7 +151,7 @@
                 <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
-                <a class = "foot-date" href="#"><?php require "date.php" ?></a>
+                <a class = "foot-date" href="#"><?php require "date_3lab.php" ?></a>
             </div>
         </div>
     </footer>  

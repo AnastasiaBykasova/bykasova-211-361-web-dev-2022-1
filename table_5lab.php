@@ -1,5 +1,5 @@
 <?php
-include "db_term.php";
+include "db_term_5lab.php";
 
 $sql = mysqli_query($conn, 'SELECT * FROM `terms`');
   while ($result = mysqli_fetch_array($sql)) {

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
-    <?php require "name.php"; ?>
+    <?php require "name_3lab.php"; ?>
 </head>
 <body>
     <header> 
@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="header-line">
                     <div class="nav">
-                        <a data-content="Homepage" href="<?php 
+                        <a data-content="Homepage" id="homepage" href="<?php 
                             $name='Homepage &#9749;'; 
                             $link='index.php'; 
                             $current_page=true; 
@@ -55,8 +55,9 @@
                                 echo $name;
                             ?>
                         </a>
-                        <a data-content="Math-functions" href="math.php">Math-functions</a>
-                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
+                        <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
+                        <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
+                        <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                     </div>
                 </div>
             </div>
@@ -82,12 +83,12 @@
                 ?>
             </div>
             <div class = "list">
-            <?php require "list.php"?>
+            <?php require "list_3lab.php"?>
             </div>
             
             <!--<div class = "table">
                 <table class="table_db">
-                <?php //require "table.php" ?>
+                <?php //require "table_5lab.php" ?>
                 </table>
             </div>-->
         </div>
@@ -101,7 +102,7 @@
                 <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
-                <a class = "foot-date" href="#"><?php require "date.php" ?></a>
+                <a class = "foot-date" href="#"><?php require "date_3lab.php" ?></a>
             </div>
         </div>
     </footer>  

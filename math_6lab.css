@@ -1,12 +1,10 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
     background-color: #2D0051;
 }
 .header {
     margin: 0px;
-    margin-bottom: -22px;
 }
 .container {
     margin: 0px;   
@@ -25,6 +23,9 @@ body {
     vertical-align: text-bottom;
     font-weight: 700;
     font-size: 14px;
+}
+#functions {
+    color: #e4c2ff;
 }
 a {
     color: #fff;
@@ -52,38 +53,23 @@ a:before {
     -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
-.background-login {
+.elements {
     background-image: url(bg_1.jpg);
     height: 88vh;
     background-repeat: round;
     background-size: 30%;
-    margin-bottom: -45px; 
+    margin-bottom: -45px;
 }
-.container-login-form {
-    margin: 0 30%;
-    padding-left: 0px;
-    padding-top: 0px;
-    background-color: #e4c2ff;
-    background-size: cover;
-    width: 40%;
-    position:relative;
-    text-align: center;
-}
-.elements-login {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 14px;
-    padding-bottom: 5px;
-    padding-top: 20px;
-}
-.buttons {
-    text-align: center;
+.congrats_pic {
+    position: absolute;
+    top: 120px;
+    left: 200px;
 }
 .footer {
     margin-top: 5px;
 }
 .down-line {
-    height: 0.2vh;
+    height: 3vh;
     padding-top: 36px;
     display: flex;
     align-items: center;
@@ -95,7 +81,7 @@ a:before {
     font-weight: 700;
     font-size: 14px;
     position: relative;
-    bottom: -2px;
+    bottom: 8px;
     vertical-align: middle;
 }
 .my-name {
@@ -143,5 +129,6 @@ a:before {
     font-size: 14px;
     position: relative;
     right: -410px;
+    
     object-position: center;
 }

@@ -16,11 +16,12 @@
                     <div class="nav">
                         <a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>
                         <a data-content="Contacts" href="#go-to-footer">Contacts &#9734;</a>
-                        <a data-content="Achievements" href="achievements.php">Achievements &#36;</a>
+                        <a data-content="Achievements" id="achievements" href="achievements.php">Achievements &#36;</a>
                         <a data-content="Log in" href="login.php">Log in &#10149;</a>
                         <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
-                        <a data-content="Math-functions" href="math.php">Math-functions</a>
-                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
+                        <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
+                        <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
+                        <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                     </div>
                 </div>
             </div>
@@ -161,7 +162,7 @@
                 <a class="email" href="#">nastybykasova@gmail.com</a>
                 <a class="text-phone">&#9990; Телефон:</a>
                 <a class="number-phone" href="#">+7(999)999-99-99</a>
-                <a class = "foot-date" href="#"><?php require "date.php" ?></a>
+                <a class = "foot-date" href="#"><?php require "date_3lab.php" ?></a>
             </div>
         </div>
     </footer>  

@@ -19,8 +19,9 @@
                         <a data-content="Achievements" href="achievements.php">Achievements &#36;</a>
                         <a data-content="Log in" href="login.php">Log in &#10149;</a>
                         <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
-                        <a data-content="Math-functions" href="math.php">Math-functions</a>
-                        <a data-content="Калькулятор" href="index_js.html">Калькулятор &#128425;</a>
+                        <a data-content="Math-functions" href="math.php">Math-functions &#9731;</a>
+                        <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
+                        <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                     </div>
                 </div>
             </div>

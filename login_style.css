@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: black;
     overflow: hidden;
     background-color: #2D0051;
 }
@@ -26,6 +25,9 @@ body {
     vertical-align: text-bottom;
     font-weight: 700;
     font-size: 14px;
+}
+#login {
+    color: #e4c2ff;
 }
 a {
     color: #fff;
@@ -53,14 +55,14 @@ a:before {
     -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
-.background-fb {
+.background-login {
     background-image: url(bg_1.jpg);
     height: 88vh;
     background-repeat: round;
     background-size: 30%;
     margin-bottom: -45px; 
 }
-.container-fb-form {
+.container-login-form {
     margin: 0 30%;
     padding-left: 0px;
     padding-top: 0px;
@@ -70,17 +72,12 @@ a:before {
     position:relative;
     text-align: center;
 }
-.elements-fb {
+.elements-login {
     text-align: left;
-    color: black;
     padding-left: 20px;
     font-size: 14px;
     padding-bottom: 5px;
-    line-height: 1.5;
-    padding-top: 5px;
-}
-.from-where, .appeal-text {
-    line-height: 0.3em;
+    padding-top: 20px;
 }
 .buttons {
     text-align: center;
@@ -148,6 +145,6 @@ a:before {
     font-weight: 700;
     font-size: 14px;
     position: relative;
-    right: -410px;   
+    right: -410px;
     object-position: center;
 }
