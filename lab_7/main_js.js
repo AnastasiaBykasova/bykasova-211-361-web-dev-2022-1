@@ -101,6 +101,7 @@ function compile(str) {
 // (https://ru.wikipedia.org/wiki/Обратная_польская_запись#Вычисления_на_стеке).
 //6
 function evaluate(str) {
+
     // your code here
 }
 
@@ -131,43 +132,18 @@ function clickHandler(event) {
         
     });
 
-    
-
-    /*
-    let press_2 = document.querySelectorAll('.key_clear');
-    press_2.forEach(function(element){
-        element.addEventListener('click', function() {   
-             string_enter = "";
-             document.getElementById('out_screen').value = string_enter;
-        });
-        
-    });*/
-
     let click_clear_all = document.getElementById('b_c_all');
     click_clear_all.onclick = function() {
         string_enter = "";
         document.getElementById('out_screen').value = string_enter;
     }
+
     let click_clear = document.getElementById('b_c_one');
     click_clear.onclick = function() {
         string_enter = string_enter.replace(/.$/, "");
         document.getElementById('out_screen').value = string_enter;
     }
 
-
-    let press_2 = document.querySelectorAll('.key_digit,.key_operation,.key_bracket');
-    press_2.forEach(function(element){
-        element.addEventListener('click', function() {   
-            //string_enter += this.value;  
-            //document.getElementById('out_screen').value = string_enter;
-            //alert("Введено " + this.value);
-            
-        });
-        
-    });
-
-
-    
     let click_result = document.getElementById('bt_r');
     click_result.onclick = function() {
         string_enter += this.value;  
@@ -176,201 +152,10 @@ function clickHandler(event) {
         alert(compile(string_enter));
     }
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-    let digit_press = document.querySelectorAll('.key_digit');
-    digit_press.forEach(function(element_d){
-        element_d.addEventListener('click', function() {     
-            window.onload = function() {
-                function strPad() {
-                    document.getElementById('out_screen').value = this.value;
-                }
-                let bt = document.getElementsByClassName("key_digit");
-                for (let i = 0; i < bt.length; i++) {
-                    bt[i].onclick = strPad;
-                }
-              }
-            //alert('digit');
-            //answer_screen.classList.add('screen_digit');
-      });
-    });*/
-    
-    /*
-    let digit_press = document.querySelectorAll('.key_digit');
-    digit_press.forEach(function(element_d){
-        element_d.addEventListener('click', function() {     
-            //alert('digit');
-            //answer_screen.classList.add('screen_digit');
-            let str_digit = "";
-            str_digit += this.value;
-            document.getElementById('out_screen').value = str_digit;
-        });
-    });*/
-
-
-    /*
-    let digit_press = document.querySelectorAll('.key_digit');
-    digit_press.forEach(function(element_d){
-        element_d.addEventListener('click', function() {     
-            //alert('digit');
-            //answer_screen.classList.add('screen_digit');
-            document.getElementById('out_screen').value = this.value;
-      });
-    });*/
-
-    /*
-    let oper_press = document.querySelectorAll('.key_operation');
-    oper_press.forEach(function(element_o){
-        element_o.addEventListener('click', function() {     
-            //alert('operation');
-            document.getElementById('out_screen').value = this.value;
-      });
-    });
-
-    let click_clear = document.getElementById('b_c');
-    click_clear.onclick = function() {
-        //alert("clear");
-    }
-
-    let bracket_press = document.querySelectorAll('.key_bracket');
-    bracket_press.forEach(function(element_b){
-        element_b.addEventListener('click', function() {     
-            //alert('bracket');
-            
-      });
-    });
-
-    let click_result = document.getElementById('bt_r');
-    click_result.onclick = function() {
-        //alert("result");
-    }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*
     let click_1 = document.getElementById('d_1');
     click_1.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_2 = document.getElementById('d_2');
-    click_2.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_3 = document.getElementById('d_3');
-    click_3.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_4 = document.getElementById('d_4');
-    click_4.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_5 = document.getElementById('d_5');
-    click_5.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_6 = document.getElementById('d_6');
-    click_6.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_7 = document.getElementById('d_7');
-    click_7.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_8 = document.getElementById('d_8');
-    click_8.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_9 = document.getElementById('d_9');
-    click_9.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_0 = document.getElementById('d_0');
-    click_0.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_coma = document.getElementById('d_c');
-    click_coma.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_clear = document.getElementById('b_c');
-    click_clear.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_bl = document.getElementById('b_l');
-    click_bl.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_br = document.getElementById('b_r');
-    click_br.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_add = document.getElementById('o_a');
-    click_add.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_sub = document.getElementById('o_s');
-    click_sub.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_mult = document.getElementById('o_m');
-    click_mult.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_div = document.getElementById('o_d');
-    click_div.onclick = function() {
-        alert("кнопка нажата");
-    }
-    let click_result = document.getElementById('bt_r');
-    click_result.onclick = function() {
         alert("кнопка нажата");
     }
     */
