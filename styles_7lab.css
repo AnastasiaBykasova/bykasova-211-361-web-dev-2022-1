@@ -55,7 +55,7 @@ a:before {
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
 .elements {
-    background-image: url(bg_1_1.jpg);
+    background-image: url(bg_1.jpg);
     height: 88vh;
     background-repeat: round;
     background-size: 30%;
@@ -82,8 +82,8 @@ h6 {
     opacity: 70%;
 }
 
-.key_bracket, .key_clear, .key_operation,
-.key_digit, .key_result {
+.key_bracket, .key_clear_1, .key_clear_2, 
+.key_operation, .key_digit, .key_result {
     cursor: pointer;
     color: #6600CC;
     width: 52px;
@@ -228,6 +228,7 @@ h6 {
     font-weight: 700;
     font-size: 14px;
 }
+
 .number-phone {
     color: white;
     text-decoration: none;

@@ -12,8 +12,9 @@
     <script src="in_7lab.js" defer></script>
     <title>Калькулятор</title>
 </head>
+
 <body>
-    <header> 
+<header> 
         <div class="header">
             <div class="container">
                 <div class="header-line">
@@ -31,19 +32,20 @@
             </div>
         </div>
     </header>
-    
-    <main>
-        <div class="elements">
-            <div class="calc-pic">
-                <img src="calc_2.jpg" height="536px">
+
+	<main>	
+	<div class="elements">
+        <div class="calc-pic">
+            <img src="calc_2.jpg" height="536px">
+        </div>
+        <h6>calculator</h6>
+        <div class="calc-container" id="calc-container">
+            <div class="screen" id="screen">
+            <textarea id="out_screen" rows="5" cols="33" wrap="soft" onclick="paste()" disabled></textarea>
+            <span></span>
             </div>
-            <h6>calculator</h6>
-            <div class="calc-container">
-                <div class="screen">
-                    <textarea id="out_screen" rows="5" cols="33" wrap="soft" onclick="paste()" disabled></textarea>
-                </div>
-                <div class="buttons">
-                    <div class="digits">
+            <div class="buttons" id="buttons">
+                <div class="digits" id="digits">
                         <button class="key_digit" id="d_1" value="1">1</button>
                         <button class="key_digit" id="d_2" value="2">2</button>
                         <button class="key_digit" id="d_3" value="3">3</button>
@@ -57,18 +59,17 @@
                         <button class="key_digit" id="d_0" value="0">0</button>
                         <button class="key" style="visibility: hidden;" id="b_hidden" value=""></button>
                     </div>
-                    <div class="other">
+                    <div class="other" id="other" >
                         <button class="key_operation" id="o_a" value="+">+</button>
-                        <button class="key_clear" id="b_c_all" value="C">C</button>
+                        <button class="key_clear_1" id="b_c_all" value="C">C</button>
                         <button class="key_bracket" id="b_l" value="(">(</button>
                         <button class="key_bracket" id="b_r" value=")">)</button>
                         <button class="key_operation" id="o_d" value="/">/</button>
                         <button class="key_operation" id="o_m" value="*">*</button>
                         <button class="key_operation" id="o_s" value="-">-</button>
                         <button class="key_result" id="bt_r" value="=">=</button>
-                        <button class="key_clear" id="b_c_one" value="CE">CE</button>
+                        <button class="key_clear_2" id="b_c_one" value="CE">CE</button>
                     </div>
-                </div>
             </div>
         </div>
     </main>
@@ -85,6 +86,5 @@
             </div>
         </div>
     </footer>  
-    
-</body>
+</body>  
 </html>

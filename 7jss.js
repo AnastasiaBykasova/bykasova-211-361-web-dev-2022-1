@@ -1,7 +1,7 @@
 // Функция priority позволяет получить 
 // значение приоритета для оператора.
 // Возможные операторы: +, -, *, /.
-//1
+
 function priority(operation) {
     if (operation == '+' || operation == '-') {
         return 1;
@@ -11,19 +11,16 @@ function priority(operation) {
 }
 
 // Проверка, является ли строка str числом.
-//2.1
 function isNumeric(str) {
     return /^\d+(.\d+){0,1}$/.test(str);
 }
 
 // Проверка, является ли строка str цифрой.
-//2.2
 function isDigit(str) {
     return /^\d{1}$/.test(str);
 }
 
 // Проверка, является ли строка str оператором.
-//2.3
 function isOperation(str) {
     return /^[\+\-\*\/]{1}$/.test(str);
 }
@@ -32,7 +29,7 @@ function isOperation(str) {
 // с арифметическим выражением и делит его на токены 
 // (числа, операторы, скобки). Возвращаемое значение --
 // массив токенов.
-//3
+
 function tokenize(str) {
     let tokens = [];
     let lastNumber = '';
@@ -65,7 +62,7 @@ function tokenize(str) {
 // +, -, *, /, а также скобки. Все операторы бинарны и левоассоциативны.
 // Функция реализует алгоритм сортировочной станции 
 // (https://ru.wikipedia.org/wiki/Алгоритм_сортировочной_станции).
-//4
+
 function compile(str) {
     let out = [];
     let stack = [];
@@ -99,7 +96,7 @@ function compile(str) {
 // действительные числа и операторы +, -, *, /.
 // Вам нужно реализовать эту функцию
 // (https://ru.wikipedia.org/wiki/Обратная_польская_запись#Вычисления_на_стеке).
-//6
+
 function evaluate(str) {
     var stack = compile(str).split(" ");
     for(var i = 0; i < stack.length; i++) {
@@ -142,9 +139,9 @@ function evaluate(str) {
 // Реализуйте эту функцию. Воспользуйтесь механизмом делегирования 
 // событий (https://learn.javascript.ru/event-delegation), чтобы 
 // не назначать обработчик для каждой кнопки в отдельности.
-//5
-function clickHandler(event) {
 
+function clickHandler(event) {
+    
     if(event.target.className !== 'digits' && event.target.className !== 'other') {
         if (event.target.className === 'key_digit') { 
             var screen = document.getElementById("out_screen");
@@ -167,22 +164,57 @@ function clickHandler(event) {
             screen.textContent = screen.textContent + event.target.textContent;
         } 
     }
+    
+
+    /*
+    let press_1 = document.querySelectorAll('.key_digit,.key_operation,.key_bracket');
+    let string_enter = "";
+    press_1.forEach(function(element){
+        element.addEventListener('click', function() {   
+            string_enter += this.value;  
+            document.getElementById('out_screen').value = string_enter;
+            //alert("Введено " + this.value);
+        });
+        
+    });
+
+    let click_clear_all = document.getElementById('b_c_all');
+    click_clear_all.onclick = function() {
+        string_enter = "";
+        document.getElementById('out_screen').value = string_enter;
+    }
+
+    let click_clear = document.getElementById('b_c_one');
+    click_clear.onclick = function() {
+        string_enter = string_enter.replace(/.$/, "");
+        document.getElementById('out_screen').value = string_enter;
+    }
+
+    let click_result = document.getElementById('bt_r');
+    click_result.onclick = function() {
+        string_enter += this.value;  
+        document.getElementById('out_screen').value = string_enter;
+        //alert(string_enter);
+        alert(compile(string_enter));
+    }
+    */
+
+
+    /*
+    let click_1 = document.getElementById('d_1');
+    click_1.onclick = function() {
+        alert("кнопка нажата");
+    }
+    */
 
 
 
-    
-    
-};
-    
-    
 
+}
 
 
 // Назначьте нужные обработчики событий.
-//7
 window.onload = function () {
-
-
     var digits = document.getElementById("digits");
     var other = document.getElementById("other");
     digits.addEventListener("click", function(event){
@@ -191,13 +223,7 @@ window.onload = function () {
     other.addEventListener("click", function(event){
         clickHandler(event);
     })
-
 }
 
 
-//const output = document.querySelector('output')
-
-
-
-
-
+//clickHandler();
