@@ -1,9 +1,17 @@
+html {
+    overflow-x: hidden;
+    overflow-y: initial;
+}
 body {
     margin: 0;
+    margin-bottom: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #2D0051;
 }
-.header {
+header {
+    background-color: #2D0051;
+    height: 50px;
+    width: 100%;
+    position: absolute;
     margin: 0px;
 }
 .container {
@@ -53,12 +61,11 @@ a:before {
     -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
-.elements {
+main {
     background-image: url(bg_1.jpg);
-    height: 150vh;
+    height: 138vh;
     background-repeat: round;
     background-size: 30%;
-    margin-bottom: -45px;
 }
 .bird-pic {
     vertical-align: middle;
@@ -75,9 +82,9 @@ a:before {
 	border: none;
 	margin-bottom: 20px;
 	border-collapse: separate;
-    position: relative;
+    position: absolute;
     left: 5%;
-    top: 3%;
+    top: 10%;
     background-color: white;
 }
 .table caption {
@@ -128,15 +135,23 @@ a:before {
 	border-radius: 0 0 20px 0;
 }
 #table2 {
-    position: relative;
+    position: absolute;
     left: 5%;
+    top: 45%;
 }
 #table3 {
-    position: relative;
+    position: absolute;
     left: 5%;
+    top: 88%;
 }
-.footer {
-    margin-top: 5px;
+footer {
+    background-color: #2D0051;
+    position: absolute;
+    top: 1000px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    padding-bottom: 0;
 }
 .down-line {
     height: 3vh;
@@ -150,8 +165,8 @@ a:before {
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
-    position: relative;
-    bottom: 8px;
+    position: absolute;
+    bottom: 12px;
     vertical-align: middle;
 }
 .my-name {

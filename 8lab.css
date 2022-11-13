@@ -14,50 +14,6 @@ body {
 .header > nav {
     display: flex;
 }
-.header-line {
-    padding-top: 25px;
-    display: flex;
-    margin: 0px;
-}
-.nav_nav {
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    top: 10px;
-    object-position: center;
-    vertical-align: text-bottom;
-    font-weight: 700;
-    font-size: 14px;
-}
-#cats_facts {
-    color: #f9e000;
-}
-a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    text-decoration: none;
-    margin-right: 25px;
-    margin-left: 10px;
-    object-position: center;
-    font-weight: 700;
-    font-size: 18px;
-}
-a:hover:before {
-    clip: rect(0, 190px, 190px, 0);
-}
-a:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: attr(data-content);
-    display: inline-block;
-    color: #f9e000;
-    width: 100%;
-    clip: rect(0, 0, 190px, 0);
-    -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
-    transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
-}
 
 .title {
     margin-left: 20px;

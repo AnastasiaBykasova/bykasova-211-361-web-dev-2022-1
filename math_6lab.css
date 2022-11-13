@@ -1,9 +1,13 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #2D0051;
+    overflow: hidden;
 }
-.header {
+header {
+    background-color: #2D0051;
+    height: 50px;
+    width: 100%;
+    position: absolute;
     margin: 0px;
 }
 .container {
@@ -55,7 +59,7 @@ a:before {
 }
 .elements {
     background-image: url(bg_1.jpg);
-    height: 88vh;
+    height: 97vh;
     background-repeat: round;
     background-size: 30%;
     margin-bottom: -45px;
@@ -65,8 +69,14 @@ a:before {
     top: 120px;
     left: 200px;
 }
-.footer {
+footer {
+    background-color: #2D0051;
     margin-top: 5px;
+    position: absolute;
+    top: 708px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
 }
 .down-line {
     height: 3vh;
@@ -80,8 +90,8 @@ a:before {
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
-    position: relative;
-    bottom: 8px;
+    position: absolute;
+    bottom: 12px;
     vertical-align: middle;
 }
 .my-name {

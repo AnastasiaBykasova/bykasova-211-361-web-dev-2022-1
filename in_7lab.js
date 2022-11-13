@@ -101,22 +101,22 @@ function compile(str) {
 // (https://ru.wikipedia.org/wiki/Обратная_польская_запись#Вычисления_на_стеке).
 //6
 function evaluate(str) {
-    var stack = compile(str).split(" ");
+    let stack = compile(str).split(" ");
     for(var i = 0; i < stack.length; i++) {
         if("+-/*".indexOf(stack[i]) !== -1) {
-            var operator = stack[i];
+            let oper = stack[i];
             stack.splice(i, 1);
-            var y = Number(stack[i - 1]);
+            let y = Number(stack[i - 1]);
             stack.splice(i - 1, 1);
-            var x = Number(stack[i - 2]);
+            let x = Number(stack[i - 2]);
             stack.splice(i - 2, 1);         
-            if(operator === '+') {
+            if(oper === '+') {
                 stack.splice(i - 2, 0, x + y);
             }
-            else if(operator === '-') {
+            else if(oper === '-') {
                 stack.splice(i - 2, 0, x - y);
             }
-            else if(operator === '*') {
+            else if(oper === '*') {
                 stack.splice(i - 2, 0, x * y);
             }
             else {
@@ -125,7 +125,7 @@ function evaluate(str) {
             i = 0;
         }
     }
-    var screen = document.getElementById("out_screen");
+    let screen = document.getElementById("out_screen");
     screen.textContent = stack[0];
 }
 
@@ -147,23 +147,23 @@ function clickHandler(event) {
 
     if(event.target.className !== 'digits' && event.target.className !== 'other') {
         if (event.target.className === 'key_digit') { 
-            var screen = document.getElementById("out_screen");
+            let screen = document.getElementById("out_screen");
             screen.textContent = screen.textContent + event.target.textContent;
             }
         else if (event.target.className === 'key_clear_1') { 
-            var screen = document.getElementById("out_screen");
+            let screen = document.getElementById("out_screen");
             screen.textContent = "";
         }
         else if (event.target.className === 'key_clear_2') { 
-            var screen = document.getElementById("out_screen");
+            let screen = document.getElementById("out_screen");
             screen.textContent = screen.textContent.replace(/.$/, "");
         }
         else if (event.target.className === 'key_result') { 
-            var screen = document.getElementById("out_screen");
+            let screen = document.getElementById("out_screen");
             evaluate(screen.textContent);
         } 
         else {
-            var screen = document.getElementById("out_screen");
+            let screen = document.getElementById("out_screen");
             screen.textContent = screen.textContent + event.target.textContent;
         } 
     }
@@ -183,8 +183,8 @@ function clickHandler(event) {
 window.onload = function () {
 
 
-    var digits = document.getElementById("digits");
-    var other = document.getElementById("other");
+    let digits = document.getElementById("digits");
+    let other = document.getElementById("other");
     digits.addEventListener("click", function(event){
         clickHandler(event);
     })
