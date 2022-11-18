@@ -149,7 +149,7 @@ function clickHandler(event) {
         if (event.target.className === 'key_digit') { 
             let screen = document.getElementById("out_screen");
             screen.textContent = screen.textContent + event.target.textContent;
-            }
+        }
         else if (event.target.className === 'key_clear_1') { 
             let screen = document.getElementById("out_screen");
             screen.textContent = "";

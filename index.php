@@ -56,6 +56,7 @@
                 <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
                 <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
                 <a data-content="Cats facts" href="8lab.html">Cats facts &#10048;</a>
+                <a data-content="PHP functions" id="php-func" href="training_9.php">PHP functions &#10149;</a>
             </div>
         </div>
     </div>

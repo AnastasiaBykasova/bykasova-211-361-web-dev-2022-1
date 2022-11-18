@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats facts</title>
     <link rel="stylesheet" href="in_8lab.css">
-    <script src="in_8lab.js" defer></script>
+    <script src="8.8.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -18,6 +18,7 @@
                 <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
                 <a data-content="Калькулятор" id="calc_7lab" href="in_7lab.html">Калькулятор &infin;</a>
                 <a data-content="Cats facts" id="cats_facts" href="in_8lab.php">Cats facts &#10048;</a>
+                <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
             </div>
         </div>
         <nav>
@@ -28,40 +29,24 @@
     <main>
         <div class="container">
             <div class="search-form">
-                <input type="text" class="search-field">
-                <button class="search-btn">Найти</button>
+                <input type="text" value="" class="search-field" placeholder="Search" id="text-to-find" autofocus>
+                <button class="search-btn" id="search-btn" onclick="javascript: SearchOnPage();">Найти</button>
+                <!--<input class="search-btn" type="submit" id="search-btn" onclick="javascript: FindOnPage('text-to-find',true); return false;" aria-autocomplete="list" value="Найти">-->
             </div>
             <div class="pagination-info">
-                <span>
-                    Показывать по
-                    <select name="per-page" class="per-page-btn">
-                        <option>5</option>
-                        <option selected>10</option>
-                        <option>15</option>
-                        <option>20</option>
-                        <option>25</option>
-                        <option>50</option>
-                        <option>100</option>
-                    </select>
-                    записей на странице
-                </span>
-                <span class="current-interval-info">
-                    Показаны записи с <span class="current-interval-start">1</span> по <span class="current-interval-end">10</span> из <span class="total-count">190</span>
-                </span>
+                <span>Показывать по <select name="per-page" class="per-page-btn"><option>5</option>
+                        <option selected>10</option><option>15</option>
+                        <option>20</option><option>25</option>
+                        <option>50</option><option>100</option><option>200</option>
+                    </select> записей на странице</span>
+                <span class="current-interval-info">Показаны записи с <span class="current-interval-start">1</span> по <span class="current-interval-end">10</span> из <span class="total-count">190</span></span>
             </div>
             <div class="facts-list" data-url="http://cat-facts-api.std-900.ist.mospolytech.ru/facts">
                 <div class="facts-list-item">
-                    <div class="item-content">
-                        Scottish sailer Alexander Selkirk once survived for 4 years on a deserted island thanks to feral cats that protected him
-                        from large rats during the night.
-                    </div>
+                    <div class="item-content">Scottish sailer Alexander Selkirk once survived for 4 years on a deserted island thanks to feral cats that protected him from large rats during the night.</div>
                     <div class="item-footer">
-                        <div class="author-name">
-                            Alex Wohlbruck
-                        </div>
-                        <div class="upvotes">
-                            4
-                        </div>
+                        <div class="author-name">Alex Wohlbruck</div>
+                        <div class="upvotes">4</div>
                     </div>
                 </div>
             </div>

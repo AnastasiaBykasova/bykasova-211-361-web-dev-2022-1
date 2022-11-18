@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+}
+.container {
+    margin: 0px; 
+}
+.header-line {
+    padding-top: 30px;
+    display: flex;
+    margin: 0px;
+}
+.nav {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -20px;
+    object-position: center;
+    vertical-align: text-bottom;
+    font-weight: 700;
+    font-size: 14px;
+}
+#logo-poly {
+    padding-left: 150px;
+    position: absolute;
+    right: -230px;
+    top: 6px;
+}
+.my-name {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+.lab-number {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 235px;
+}
+.var-number {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 10px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.background {
+    background-color: #9c9c9c;
+    height: 1000px;
+    min-height: calc(200vh - 40px);
+}
+
+.php-start {
+    position: absolute;
+    top: 90px;
+    /*text-align: center;*/
+    left: 40px;
+    background-color: #9c9c9c;
+    width: 120%;
+}
+
+/*
+.e-type {
+    
+    text-align: left;
+    position: absolute;
+    left: -20px;
+
+    width: 1450px;
+    height: 650px;
+    overflow: hidden;
+}
+.type_e {
+    border: 2px solid red;
+    margin: 0;
+    padding-right: 20px;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}*/
+
+.e-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 75px);
+    grid-gap: 38px;
+    justify-content: start;
+  
+    width: 1370px;
+    
+    
+    resize: both;
+    overflow: hidden;
+  }
+  
+  .type_e {
+    border: 2px solid red;
+    width: 100px;
+    height: 50px;
+    font: 20px sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    /*
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    */
+  }
+
+.type_footer {
+    color: white;
+    position: absolute;
+    bottom: -170px;
+    left: 700px;
+}
+* html .down-line {
+    height: 100%;
+}
+
+.bottom-items {
+    color: #2D0051;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    /*
+    position: absolute;
+    top: calc(200vh - 32px);*/
+    position: fixed;
+    bottom: 12px;
+    vertical-align: middle;
+}
+.text-email {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.email {
+    text-decoration: none;
+    margin: 0px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.text-phone {
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 50px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.number-phone {
+    text-decoration: none;
+    margin: 0px 0px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.foot-date {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    right: -950px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header {
+    background-color: #2D0051;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+}
+.container {
+    margin: 0px; 
+}
+.header-line {
+    padding-top: 30px;
+    display: flex;
+    margin: 0px;
+}
+.nav {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -20px;
+    object-position: center;
+    vertical-align: text-bottom;
+    font-weight: 700;
+    font-size: 14px;
+}
+#logo-poly {
+    padding-left: 150px;
+    position: absolute;
+    right: -230px;
+    top: 6px;
+}
+.my-name {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+.lab-number {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 235px;
+}
+.var-number {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 10px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.background {
+    background-color: #9c9c9c;
+    height: 97vh;
+    background-repeat: round;
+    background-size: 100%;
+    margin-bottom: -45px; 
+    height:calc(100% - 50px)
+}
+
+footer {
+    background-color: black;
+    top: 708px;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+
+    height: 40px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+.down-line {
+    height: 3vh;
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .down-line {
+    height: 100%;
+}
+.bottom-items {
+    color: #2D0051;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    bottom: 12px;
+    vertical-align: middle;
+}
+.email {
+    text-decoration: none;
+    margin: 0px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.text-phone {
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 50px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.number-phone {
+    text-decoration: none;
+    margin: 0px 0px;
+    object-position: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.foot-date {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    right: -910px;
+    object-position: center;
+}
+*/
