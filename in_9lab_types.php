@@ -4,7 +4,7 @@ $precison = 3;
 $x = -10;
 $encounting = 20;
 $step = 2;
-$type = 'B';
+$type = 'D';
 
 if ($type == 'A') {
     echo '';
