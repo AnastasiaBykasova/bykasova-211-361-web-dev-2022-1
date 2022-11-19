@@ -11,7 +11,7 @@
 <body>
     <header class="header">
     <div class="container">
-        <div class="header-line">
+        <div class="header-line"> 
             <div class="nav">
                 <a data-content="Homepage" class="my-page" href="index.php">Homepage &#9749;</a>
                 <a data-content="Achievements" href="achievements.php">Achievements &#36;</a>

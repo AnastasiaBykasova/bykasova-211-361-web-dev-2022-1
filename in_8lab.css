@@ -17,7 +17,7 @@ body {
 .header-line {
     padding-top: 25px;
     display: flex;
-    margin: 0px;
+    margin: 0;
 }
 .nav_nav {
     color: white;
@@ -36,7 +36,6 @@ a {
     color: #fff;
     text-decoration: none;
     position: relative;
-    text-decoration: none;
     margin-right: 25px;
     margin-left: 10px;
     object-position: center;
@@ -95,7 +94,7 @@ a:before {
 }
 
 .upvotes {
-    background-image: url('images/upvote_white.png');
+    background-image: url('upvote_white.png');
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;

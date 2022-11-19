@@ -51,7 +51,7 @@ body {
 }
 
 .upvotes {
-    background-image: url('images/upvote_white.png');
+    background-image: url('upvote_white.png');
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
