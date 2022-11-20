@@ -96,7 +96,6 @@ function createListItemElement(record) {
     return itemElement;
 }
 
-
 function renderRecords(records) {
     let factsList = document.querySelector('.facts-list');
     factsList.innerHTML = '';
@@ -105,7 +104,6 @@ function renderRecords(records) {
     }
 }
 
-//загрузка необходимого количества записей
 function downloadData(page=1) {
     let factsList = document.querySelector('.facts-list');
     let url = new URL(factsList.dataset.url);
@@ -123,151 +121,54 @@ function downloadData(page=1) {
     xhr.send();
 }
 
-
-//input_f - принимаем текст, который ввел пользователь
-//search_f - делаем из строки регулярное выражение
-//pr_f - сохраняем в нее текущий <body></body>
-//result_f - выборка текста из pr (т.е. отсекаем теги и атрибуты)
-//result_arr_f - аналог pr, но со стилями для подсветки
-//locale_HTML_f - оригинал <body></body> который менять не будем, используем для обнуления стилей
-/*
-let input_f,search_f,pr_f,result_f,result_arr_f, locale_HTML_f, result_store_f;
-locale_HTML_f = document.body.innerHTML;   // сохраняем в переменную весь body (Исходный)
-function FindOnPage(name, status) {
-	input_f = document.getElementById(name).value; //получаем значение из поля в html
-    input_f = numer.replace(/^\s+/g,'');
-    input_f = numer.replace(/[ ]{1,}/g,' ');
-	if(input_f.length<3 && status==true) {
-		alert('Для поиска вы должны ввести три или более символов');
-		function FindOnPageBack() { 
-            document.body.innerHTML = locale_HTML_f; //обнуляем стили
-        }   
-	}
-    if(input_f.length>=3) {
-        //выполняем поиск
-        function FindOnPageGo() {
-            search_f = '/'+input_f+'/g';  //делаем из строки регуярное выражение
-            pr_f = document.body.innerHTML;   // сохраняем в переменную весь body
-            result_f = pr_f.match(/>(.*?)</g);  //отсекаем все теги и получаем только текст
-            result_arr_f = [];   //в этом массиве будем хранить результат работы (подсветку)
-            let warning = true;
-	        for(var i=0;i<result_f.length;i++) {
-	            if(result_f[i].match(eval(search_f))!=null) {
-			        warning = false;
-		        }
-	        }
-            if(warning == true) {
-                alert('Не найдено ни одного совпадения');
-            }
-            for(var i=0; i<result_f.length;i++) {
-		        result_arr_f[i] = result_f[i].replace(eval(search_f), '<span style="background-color:yellow;">'+input_f+'</span>'); //находим нужные элементы, задаем стиль и сохраняем в новый массив
-			}
-		     for(var i=0; i<result_f.length;i++) {
-			pr_f=pr_f.replace(result_f[i],result_arr_f[i])  //заменяем в переменной с html текст на новый из новогом ассива
-			}
-		     document.body.innerHTML = pr_f;  //заменяем html код
-        }
-        
-    }
-    function FindOnPageBack() { 
-        document.body.innerHTML = locale_HTML_f; //обнуляем стили
-    }   
-    if(status) { 
-        FindOnPageBack(); FindOnPageGo(); //чистим прошлое и Выделяем найденное
-    } 
-	if(!status) { 
-        FindOnPageBack(); //Снимаем выделение
-    } 
-}
-*/
-
-/*
-let input_f, locale_HTML_f;
-locale_HTML_f = document.body.innerHTML;
-function search_on_page(name, status) {
-    
-    
-    input_f = document.getElementById(name).value; //получаем значение из поля в html
-    input_f = numer.replace(/^\s+/g,'');
-    input_f = numer.replace(/[ ]{1,}/g,' ');
-
-	if(input_f.length<3 && status==true) {
-		alert('Для поиска вы должны ввести три или более символов');
-		function FindOnPageBack() { 
-            document.body.innerHTML = locale_HTML_f; //обнуляем стили
-        }   
-	}
-
-    if(input_f.length>=3) {
-        //выполняем поиск
-        function FindOnPageGo() {
-            search_f = '/'+input_f+'/g';  //делаем из строки регуярное выражение
-            pr_f = document.body.innerHTML;   // сохраняем в переменную весь body
-            result_f = pr_f.match(/>(.*?)</g);  //отсекаем все теги и получаем только текст
-            result_arr_f = [];   //в этом массиве будем хранить результат работы (подсветку)
-            let warning = true;
-	        for(var i=0;i<result_f.length;i++) {
-	            if(result_f[i].match(eval(search_f))!=null) {
-			        warning = false;
-		        }
-	        }
-            if(warning == true) {
-                alert('Не найдено ни одного совпадения');
-            }
-            for(var i=0; i<result_f.length;i++) {
-		        result_arr_f[i] = result_f[i].replace(eval(search_f), '<span style="background-color:yellow;">'+input_f+'</span>'); //находим нужные элементы, задаем стиль и сохраняем в новый массив
-			}
-		     for(var i=0; i<result_f.length;i++) {
-			pr_f=pr_f.replace(result_f[i],result_arr_f[i])  //заменяем в переменной с html текст на новый из новогом ассива
-			}
-		     document.body.innerHTML = pr_f;  //заменяем html код
-        }
-    }
-    function FindOnPageBack() { 
-        document.body.innerHTML = locale_HTML_f; //обнуляем стили
-    }   
-    if(status) { 
-        FindOnPageBack(); FindOnPageGo(); //чистим прошлое и Выделяем найденное
-    } 
-	if(!status) { 
-        FindOnPageBack(); //Снимаем выделение
-    }  
-}*/
-
-function search_on_page(page) {
-    let factsList = document.querySelector('.facts-list');
-    let url = new URL(factsList.dataset.url);
-    //let perPage = document.querySelector('.per-page-btn').value;
-    url.searchParams.append('q', 'cat');
-    //url.searchParams.append('per-page', perPage);
+function foundFact() {
+    let url = new URL("http://cat-facts-api.std-900.ist.mospolytech.ru/facts");
+    url.searchParams.append('q', document.getElementById("search-field").value);
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.responseType = 'json';
-}
-function FindOnPageGo(event) {
-    if (event.target.dataset.page) {
-        downloadData(event.target.dataset.page);
-        window.scrollTo(0, 0);
+    xhr.onload = function () {
+        renderRecords(this.response.records);
+        setPaginationInfo(this.response['_pagination']);
+        renderPaginationElement(this.response['_pagination']);
     }
-
+    xhr.send();
 }
 
+function autocompletionFact() {
+    let perPage = document.querySelector('.per-page-btn').value;
+    let url = new URL("http://cat-facts-api.std-900.ist.mospolytech.ru/autocomplete");
+    url.searchParams.append('per-page', perPage);
+    url.searchParams.append('q', document.getElementById("search-field").value);
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.responseType = 'json';
+    xhr.onload = function () {
+        let list = document.querySelector('.autocompletion');
+        list.innerHTML = '';
+        console.log(this.response);
+        this.response.forEach(obj => {
+            let word = document.createElement('div');
+            word.classList.add('autocomplete-item');
+            word.innerHTML = obj;
+            list.append(word);
+        });
+    }
+    xhr.send();
+}
 
-
-
-
-
+function autocompletionFactEvent(event) {
+    let searchField = document.querySelector('.search-field');
+    searchField.value = event.target.innerHTML;
+    let list = document.querySelector('.autocompletion');
+    list.innerHTML = '';
+}
 
 window.onload = function () {
-
     downloadData();
     document.querySelector('.pagination').onclick = pageBtnHandler;
     document.querySelector('.per-page-btn').onchange = perPageBtnHandler;
-    //document.querySelector('.search-btn').onclick = FindOnPage;
-    document.querySelector('.search-btn').onclick = FindOnPageGo;
-    
-    
+    document.querySelector('.search-btn').onclick = foundFact;
+    document.querySelector('.search-field').oninput = autocompletionFact;
+    document.querySelector('.autocompletion').onclick = autocompletionFactEvent;
 }
-
-
-

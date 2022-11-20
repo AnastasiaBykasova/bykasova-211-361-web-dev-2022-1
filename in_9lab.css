@@ -153,16 +153,6 @@ a {
     */
   }
 
-.type_footer {
-    color: white;
-    position: absolute;
-    bottom: -170px;
-    left: 700px;
-}
-* html .down-line {
-    height: 100%;
-}
-
 .bottom-items {
     color: #2D0051;
     text-decoration: none;

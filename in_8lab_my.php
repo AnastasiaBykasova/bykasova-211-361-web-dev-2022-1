@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats facts</title>
     <link rel="stylesheet" href="in_8lab.css">
-    <script src="8.8.js" defer></script>
+    <script src="in_8lab.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -16,7 +16,7 @@
                 <a data-content="Log in" href="login.php">Log in &#10149;</a>
                 <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                 <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
-                <a data-content="Калькулятор" id="calc_7lab" href="in_7lab.html">Калькулятор &infin;</a>
+                <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
                 <a data-content="Cats facts" id="cats_facts" href="in_8lab.php">Cats facts &#10048;</a>
                 <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
             </div>
@@ -29,17 +29,25 @@
     <main>
         <div class="container">
             <div class="search-form">
-                <input type="text" value="" class="search-field" placeholder="Search" id="text-to-find" autofocus>
-                <button class="search-btn" id="search-btn" onclick="javascript: SearchOnPage();">Найти</button>
-                <!--<input class="search-btn" type="submit" id="search-btn" onclick="javascript: FindOnPage('text-to-find',true); return false;" aria-autocomplete="list" value="Найти">-->
+                <input type="text" class="search-field" id="search-field">
+                <button class="search-btn">Найти</button>
             </div>
             <div class="pagination-info">
-                <span>Показывать по <select name="per-page" class="per-page-btn"><option>5</option>
-                        <option selected>10</option><option>15</option>
-                        <option>20</option><option>25</option>
-                        <option>50</option><option>100</option><option>200</option>
+                <span>Показывать по 
+                    <select name="per-page" class="per-page-btn">
+                        <option>5</option>
+                        <option selected>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>200</option>
                     </select> записей на странице</span>
-                <span class="current-interval-info">Показаны записи с <span class="current-interval-start">1</span> по <span class="current-interval-end">10</span> из <span class="total-count">190</span></span>
+                <span class="current-interval-info">Показаны записи с 
+                    <span class="current-interval-start">1</span> по 
+                    <span class="current-interval-end">10</span> из 
+                    <span class="total-count">190</span></span>
             </div>
             <div class="facts-list" data-url="http://cat-facts-api.std-900.ist.mospolytech.ru/facts">
                 <div class="facts-list-item">
@@ -51,6 +59,7 @@
                 </div>
             </div>
             <div class="pagination">
+                <!--
                 <button class="btn first-page-btn" data-page="1">Первая страница</button>
                 <div class="pages-btn">
                     <button class="btn active" data-page="1">1</button>
@@ -58,8 +67,12 @@
                     <button class="btn" data-page="3">3</button>
                 </div>
                 <button class="btn last-page-btn">Последняя страница</button> 
+                -->
             </div>
         </div>
     </main>
 </body>
 </html>
+
+
+
