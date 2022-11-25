@@ -21,7 +21,7 @@
                         <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                         <a data-content="Math-functions" href="math.php">Math-functions &#9731;</a>
                         <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
-                        <a data-content="Cats facts" href="in_8lab.php">Cats facts &#10048;</a>
+                        <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                         <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
                     </div>
                 </div>

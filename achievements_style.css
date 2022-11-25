@@ -69,12 +69,12 @@ main {
 }
 .bird-pic {
     vertical-align: middle;
-    position: absolute;
+    position: fixed;
     top: 30%;
     right: 5%;
 }
 .cat-pic {
-    position: absolute;
+    position: fixed;
     top: 60%;
     right: 3%;
 }
@@ -146,8 +146,8 @@ main {
 }
 footer {
     background-color: #2D0051;
-    position: absolute;
-    top: 1000px;
+    position: fixed;
+    top: 713px;
     bottom: 0px;
     height: 40px;
     width: 100%;
