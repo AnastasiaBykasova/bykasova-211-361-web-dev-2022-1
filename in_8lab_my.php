@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats facts</title>
-    <link rel="stylesheet" href="in_8lab.css">
-    <script src="in_8lab.js" defer></script>
+    <link rel="stylesheet" href="styles/in_8lab.css">
+    <script src="js_files/in_8lab.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -19,10 +19,11 @@
                 <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
                 <a data-content="Cats facts" id="cats_facts" href="in_8lab.php">Cats facts &#10048;</a>
                 <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
+                <a data-content="Text analysis" href="in_10lab.php">Text analysis</a>
             </div>
         </div>
         <nav>
-            <img class="logo" src="cat_white.png">
+            <img class="logo" src="pictures/cat_white.png">
             <div class="title">Facts about cats</div>
         </nav>
     </header>

@@ -169,8 +169,46 @@ function clickHandler(event) {
     }
 
 
+    /*
+    let press_1 = document.querySelectorAll('.key_digit,.key_operation,.key_bracket');
+    let string_enter = "";
+    press_1.forEach(function(element){
+        element.addEventListener('click', function() {   
+            string_enter += this.value;  
+            document.getElementById('out_screen').value = string_enter;
+            //alert("Введено " + this.value);
+        });
+        
+    });
 
-    
+    let click_clear_all = document.getElementById('b_c_all');
+    click_clear_all.onclick = function() {
+        string_enter = "";
+        document.getElementById('out_screen').value = string_enter;
+    }
+
+    let click_clear = document.getElementById('b_c_one');
+    click_clear.onclick = function() {
+        string_enter = string_enter.replace(/.$/, "");
+        document.getElementById('out_screen').value = string_enter;
+    }
+
+    let click_result = document.getElementById('bt_r');
+    click_result.onclick = function() {
+        string_enter += this.value;  
+        document.getElementById('out_screen').value = string_enter;
+        //alert(string_enter);
+        alert(compile(string_enter));
+    }
+    */
+
+
+    /*
+    let click_1 = document.getElementById('d_1');
+    click_1.onclick = function() {
+        alert("кнопка нажата");
+    }
+    */
     
 };
     
@@ -194,7 +232,7 @@ window.onload = function () {
 
 }
 
-
+//clickHandler();
 //const output = document.querySelector('output')
 
 

@@ -95,7 +95,7 @@ a:before {
 }
 
 .upvotes {
-    background-image: url('upvote_white.png');
+    background-image: url('../pictures/upvote_white.png');
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@ body {
 }
 
 .upvotes {
-    background-image: url('images/upvote_white.png');
+    background-image: url('../pictures/upvote_white.png');
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;

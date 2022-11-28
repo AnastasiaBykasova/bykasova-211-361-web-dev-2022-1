@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
-    <?php require "name_3lab.php"; ?>
+    <?php require "php_extra/name_3lab.php"; ?>
 </head>
 <body>
     <header> 
@@ -57,6 +57,7 @@
                 <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
                 <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                 <a data-content="PHP functions" id="php-func" href="in_9lab.php">PHP functions &#10149;</a>
+                <a data-content="Text analysis" href="in_10lab.php">Text analysis</a>
             </div>
         </div>
     </div>
@@ -74,19 +75,19 @@
             $s = date('s');
             $os = $s % 2;
             if ($os === 0)
-            $name = 'bf1.png';
+            $name = 'pictures/bf1.png';
             else
-            $name = 'bf2.png';
+            $name = 'pictures/bf2.png';
             echo '<img src = "'.$name.'" alt="Меняющаяся фотография" id = "body" height = 100px>';
             ?>
         </div>
         <div class = "list">
-        <?php require "list_3lab.php"?>
+        <?php require "php_extra/list_3lab.php"?>
         </div>    
         <!--
         <div class = "table">
             <table class="table_db">
-            <?php //require "table_5lab.php" ?>
+            <?php //require "php_extra/table_5lab.php" ?>
             </table>
         </div>-->
     </div>
@@ -99,7 +100,7 @@
             <a class="email" href="#">nastybykasova@gmail.com</a>
             <a class="text-phone">&#9990; Телефон:</a>
             <a class="number-phone" href="#">+7(999)999-99-99</a>
-            <a class = "foot-date" href="#"><?php require "date_3lab.php" ?></a>
+            <a class = "foot-date" href="#"><?php require "php_extra/date_3lab.php" ?></a>
         </div>
     </div>
     </footer>  

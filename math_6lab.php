@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="math_6lab.css">
+    <link rel="stylesheet" href="styles/math_6lab.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
                 <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
                 <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                 <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
+                <a data-content="Text analysis" href="in_10lab.php">Text analysis</a>
             </div>
         </div>
     </div>
@@ -28,7 +29,7 @@
     <main>
     <div class="elements">
         <div class="congrats_pic">
-            <img src="congrats.jpg" alt="картинка" height="500px">
+            <img src="pictures/congrats.jpg" alt="картинка" height="500px">
             <button class="key_again" id="key_again">Пройти еще раз</button>
             <script>
                 let click_1 = document.getElementById('key_again');
@@ -127,7 +128,7 @@
             </script>
         </div>
         <div class="answers">
-        <script src="math_6lab.js" defer></script>
+        <script src="js_files/math_6lab.js" defer></script>
         </div>
     </div>
     </main>
@@ -139,7 +140,7 @@
             <a class="email" href="#">nastybykasova@gmail.com</a>
             <a class="text-phone">&#9990; Телефон:</a>
             <a class="number-phone" href="#">+7(999)999-99-99</a>
-            <a class = "foot-date" href="#"><?php require "date_3lab.php" ?></a>
+            <a class = "foot-date" href="#"><?php require "php_extra/date_3lab.php" ?></a>
         </div>
     </div>
     </footer>  

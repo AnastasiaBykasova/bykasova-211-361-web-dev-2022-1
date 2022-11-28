@@ -62,10 +62,10 @@ a:before {
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
 main {
-    background-image: url(bg_1.jpg);
+    background-image: url(../pictures/bg_2.png);
     height: 138vh;
     background-repeat: round;
-    background-size: 30%;
+    background-size: 100%;
 }
 .bird-pic {
     vertical-align: middle;

@@ -4,11 +4,9 @@ body {
     overflow: hidden;
 }
 header {
-    background-color: #2D0051;
-    height: 50px;
-    width: 100%;
-    position: absolute;
     margin: 0px;
+    margin-bottom: -22px;
+    background-color: #2D0051;
 }
 .container {
     margin: 0px;   
@@ -28,7 +26,7 @@ header {
     font-weight: 700;
     font-size: 14px;
 }
-#homepage {
+#feedback {
     color: #e4c2ff;
 }
 a {
@@ -57,39 +55,36 @@ a:before {
     -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
-main {
-    background-image: url(bg_1.jpg);
-    height: 97vh;
+.background-fb {
+    background-image: url(../pictures/bg_2.png);
+    height: 88vh;
     background-repeat: round;
-    background-size: 30%;
-    margin-bottom: -45px;
+    background-size: 100%;
 }
-.text-desc {
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute;
-    left: 10%;
-    top: 14%;
-    background-color: #2D0051;
-    color: #e4c2ff;
+.container-fb-form {
+    margin: 0 30%;
+    padding-left: 0px;
+    padding-top: 0px;
+    background-color: #e4c2ff;
+    background-size: cover;
+    width: 40%;
+    position:relative;
+    text-align: center;
 }
-.pictures-hp {
-    position: absolute;
-    /*top: 400px;*/
-    top: 20%;
-    left: 43%;
-    transform: rotate(-30deg)
+.elements-fb {
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+    padding-top: 5px;
 }
-.list {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    position: absolute;
-    top: 14%;
-    right: 4.5%;
-    background-color: #2D0051;
-    color: #e4c2ff;
+.from-where, .appeal-text {
+    line-height: 0.3em;
+}
+.buttons {
+    text-align: center;
 }
 footer {
     background-color: #2D0051;
@@ -160,6 +155,6 @@ footer {
     font-weight: 700;
     font-size: 14px;
     position: relative;
-    right: -410px;
+    right: -410px;   
     object-position: center;
 }

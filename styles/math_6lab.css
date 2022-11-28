@@ -2,11 +2,14 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
+    display: flex;
 }
 header {
-    margin: 0px;
-    margin-bottom: -22px;
     background-color: #2D0051;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
 }
 .container {
     margin: 0px;   
@@ -26,7 +29,7 @@ header {
     font-weight: 700;
     font-size: 14px;
 }
-#login {
+#functions {
     color: #e4c2ff;
 }
 a {
@@ -55,32 +58,84 @@ a:before {
     -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
     transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
 }
-.background-login {
-    background-image: url(bg_1.jpg);
-    height: 88vh;
+.elements {
+    background-image: url(../pictures/bg_1.jpg);
+    height: 97vh;
     background-repeat: round;
     background-size: 30%;
-    margin-bottom: -45px; 
+    margin-bottom: -45px;
 }
-.container-login-form {
-    margin: 0 30%;
-    padding-left: 0px;
-    padding-top: 0px;
-    background-color: #e4c2ff;
-    background-size: cover;
-    width: 40%;
-    position:relative;
-    text-align: center;
+#key_again {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 310px;
+    left: 480px;
+    transform: rotate(-5deg);
+    border: 2px #2D0051;
+    cursor: pointer;
 }
-.elements-login {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 14px;
-    padding-bottom: 5px;
-    padding-top: 20px;
+/*
+* {
+    box-sizing: border-box;
+    &::before, &::after {
+      box-sizing: border-box;
+    }
 }
-.buttons {
-    text-align: center;
+.button {
+    display: inline-block;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    &.key_again {
+        font-weight: 600;
+        color: #382b22;
+        text-transform: uppercase;
+        padding: 1.25em 2em;
+        background: #fff0f0;
+        border: 2px solid #b18597;
+        border-radius: 0.75em;
+        transform-style: preserve-3d;
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+        &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f9c4d2;
+        border-radius: inherit;
+        box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+        }
+        &:hover {
+        background: #ffe9e9;
+        transform: translate(0, 0.25em);
+        &::before {
+            box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+            transform: translate3d(0, 0.5em, -1em);
+        }
+        }
+        &:active {
+        background: #ffe9e9;
+        transform: translate(0em, 0.75em);
+        &::before {
+            box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+            transform: translate3d(0, 0, -1em);
+        }
+    }
+  }
+}
+*/
+.congrats_pic {
+    position: absolute;
+    top: 120px;
+    left: 200px;
 }
 footer {
     background-color: #2D0051;
@@ -152,5 +207,6 @@ footer {
     font-size: 14px;
     position: relative;
     right: -410px;
+    
     object-position: center;
 }
