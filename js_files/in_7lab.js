@@ -32,6 +32,9 @@ function isOperation(str) {
 // с арифметическим выражением и делит его на токены 
 // (числа, операторы, скобки). Возвращаемое значение --
 // массив токенов.
+// Функция реализует алгоритм сортировочной станции 
+// (https://ru.wikipedia.org/wiki/Алгоритм_сортировочной_станции).
+//сортировочная станция
 //3
 function tokenize(str) {
     let tokens = [];
@@ -39,7 +42,8 @@ function tokenize(str) {
     for (char of str) {
         if (isDigit(char) || char == '.') {
             lastNumber += char;
-        } else {
+        } 
+        else {
             if(lastNumber.length > 0) {
                 tokens.push(lastNumber);
                 lastNumber = '';
@@ -63,8 +67,7 @@ function tokenize(str) {
 // операторы и операнды отделены друг от друга пробелами. 
 // Выражение может включать действительные числа, операторы 
 // +, -, *, /, а также скобки. Все операторы бинарны и левоассоциативны.
-// Функция реализует алгоритм сортировочной станции 
-// (https://ru.wikipedia.org/wiki/Алгоритм_сортировочной_станции).
+//обратная польская нотация, постфиксная нотация
 //4
 function compile(str) {
     let out = [];
@@ -72,25 +75,41 @@ function compile(str) {
     for (token of tokenize(str)) {
         if (isNumeric(token)) {
             out.push(token);
-        } else if (isOperation(token)) {
+        } 
+        else if (isOperation(token)) {
             while (stack.length > 0 && isOperation(stack[stack.length - 1]) && priority(stack[stack.length - 1]) >= priority(token)) {
                 out.push(stack.pop());
             }
             stack.push(token);
-        } else if (token == '(') {
+        } 
+        else if (token == '(') {
             stack.push(token);
-        } else if (token == ')') {
+        } 
+        else if (token == ')') {
             while (stack.length > 0 && stack[stack.length-1] != '(') {
                 out.push(stack.pop());
             }
             stack.pop();
         }
     }
+
     while (stack.length > 0) {
         out.push(stack.pop());
     }
     return out.join(' ');
 }
+
+
+// 9/3+2
+// out: 9 3 / 2 +
+// stack: 
+
+// 3*(4+2)
+// out: 3 4 2 + * 
+// stack:  
+
+
+
 
 // Функция evaluate принимает один аргумент -- строку 
 // с арифметическим выражением, записанным в обратной 
@@ -102,7 +121,7 @@ function compile(str) {
 //6
 function evaluate(str) {
     let stack = compile(str).split(" ");
-    for(var i = 0; i < stack.length; i++) {
+    for(let i = 0; i < stack.length; i++) {
         if("+-/*".indexOf(stack[i]) !== -1) {
             let oper = stack[i];
             stack.splice(i, 1);
@@ -120,7 +139,7 @@ function evaluate(str) {
                 stack.splice(i - 2, 0, x * y);
             }
             else {
-                stack.splice(i -2, 0, x / y);
+                stack.splice(i - 2, 0, x / y);
             }
             i = 0;
         }

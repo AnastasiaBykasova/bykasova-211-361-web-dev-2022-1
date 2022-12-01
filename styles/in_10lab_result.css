@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 header {
     margin: 0px;
@@ -87,17 +87,30 @@ a:before {
     top: 80px;
 }
 .text-itself {
-    border: 1px solid #2D0051;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
+    color: blueviolet;
     position: relative;
     left: 40px;
+    width: 240%;
+}
+/*
+.text-itself:hover {
+    border: 1px solid #8b10ef;
+}*/
+.src_error {
+    font-style: italic;
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    left: 200px;
+    top: 60px;
 }
 footer {
     background-color: #2D0051;
     margin-top: 5px;
     position: absolute;
-    top: 708px;
+    top: 1708px;
     bottom: 0px;
     height: 40px;
     width: 100%;
