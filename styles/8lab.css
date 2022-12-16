@@ -10,6 +10,12 @@ body {
     padding: 20px;
     padding-left: 50px;
 }
+#multti {
+    color: #e4c2ff;
+    position: absolute;
+    top: 42px;
+    left: 0px;
+}
 
 .header > nav {
     display: flex;

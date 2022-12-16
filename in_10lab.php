@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
-    <title>Login_page</title>
+    <title>Text analysis</title>
 </head>
 <body>
     <header>
@@ -19,9 +19,10 @@
                 <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                 <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
                 <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
-                <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
+                <a data-content="Cats facts" href="in_8lab.php">Cats facts &#10048;</a>
                 <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
                 <a data-content="Text analysis" id="text_analysis" href="in_10lab.php">Text analysis</a>
+                <a data-content="Multiplication table" id="multti" href="in_11lab.php">Multiplication table</a>
             </div>
         </div>
     </div>        
@@ -34,7 +35,7 @@
             <div class="elements">
                 <textarea name="my_text" class="my_text" placeholder="Enter your text" rows="15" wrap="soft" cols="60" value="<?php if (isset($_GET['my_text'])){
                     echo $_GET['my_text'];}?>"></textarea>
-                <p><div class="buttons"><input type="reset" value="resume"><input type="submit" value="analyse"></div></p>
+                <p><div class="buttons"><input type="reset" value="resume"><!--<input type="submit" value="analyse">--><button formmethod="POST" name="send_text" value="1">Анализировать</button></div></p>
             </div>
         </form>
         </div>

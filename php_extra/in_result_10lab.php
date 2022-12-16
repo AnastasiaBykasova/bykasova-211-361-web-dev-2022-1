@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
-    <title>Login_page</title>
+    <title>Result</title>
 </head>
 <body>
 
@@ -124,12 +124,7 @@ function test_it($text) {
     echo implode("\r\n", $kol);
 
     $with_rus = iconv("cp1251", "utf-8", $text);
-    for($i=0; $i<strlen($with_rus); $i++) {
-        if(isset($kol_symbs[$with_rus[$i]])) {                                                                // если символ есть в массиве
-            $kol_symbs[$with_rus[$i]]++;                                                                           // увеличиваем счетчик повторов
-        }
-        
-    }
+    
 
     //echo '<br>';
     //foreach ($kol as $row) {
@@ -146,20 +141,36 @@ function test_it($text) {
 function test_symbs($text) {
     $symbs = array();                                                                                  // массив символов текста
     $l_text = strtolower($text);                                                                     // переводим текст в нижний регистр
+    $both_arrays = array();
     // последовательно перебираем все символы текста
     for($i=0; $i<strlen($l_text); $i++) {
-        if(isset($kol_symbs[$l_text[$i]])) {                                                                // если символ есть в массиве
+        if(isset($kol_symbs[$l_text[$i]]) && ($l_text[$i] != ' ')) {                                                                // если символ есть в массиве
             $kol_symbs[$l_text[$i]]++;                                                                           // увеличиваем счетчик повторов
         }
         else {
-            $kol_symbs[$l_text[$i]]=1; // добавляем символ в массив
+            if ($l_text[$i] != ' ') {
+                $kol_symbs[$l_text[$i]]=1; // добавляем символ в массив
+                $symbs[$i]=1;
+            }
         }
     }
     //$result = array_combine($symbs, $kol_symbs);
     //echo iconv("cp1251", "utf-8", $text);
     //$result = $symbs + $kol_symbs;
     //return $result;
-    return $kol_symbs; // возвращаем массив с числом вхождений символов в тексте
+    
+    //$res = array_combine($symbs, $kol_symbs);
+    //$res = $symbs + $kol_symbs;
+    //return $res;
+    //echo implode("\r\n", $res);
+    //for ($q=0; $q<count($symbs)*2; $q=($q+2)) {
+    //    $both_arrays[$symbs[$q]]=$q;
+        //$both_arrays[$symbs[$q+1]]=$kol_symbs[$q];
+        
+    //}
+    return $both_arrays;
+    
+    //return $kol_symbs; // возвращаем массив с числом вхождений символов в тексте
 }
 
 

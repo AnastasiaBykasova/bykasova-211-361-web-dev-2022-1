@@ -7,6 +7,13 @@ header {
     margin: 0px;
     margin-bottom: -22px;
     background-color: #2D0051;
+    height: 80px;
+}
+#multti {
+    color: #e4c2ff;
+    position: absolute;
+    top: 32px;
+    left: 0px;
 }
 .container {
     margin: 0px;   

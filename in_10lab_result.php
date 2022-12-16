@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap" rel="stylesheet">
-    <title>Login_page</title>
+    <title>Result</title>
 </head>
 <body>
     <header>
@@ -18,8 +18,8 @@
                 <a data-content="Log in" href="login.php">Log in &#10149;</a>
                 <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                 <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
-                <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
-                <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
+                <a data-content="Калькулятор" href="in_7lab.php">Калькулятор &infin;</a>
+                <a data-content="Cats facts" href="in_8lab.php">Cats facts &#10048;</a>
                 <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
                 <a data-content="Text analysis" id="text_analysis" href="in_10lab_result.php">Text analysis</a>
             </div>
@@ -30,6 +30,7 @@
     <div class="background">
         <div class="bg-elements">
             <h1 class="form_result_name">Result</h1>
+            <a href="in_10lab.php" class="analysis_again ">New analysis</a>
             <div class="elements-result">
                 <?php require "php_extra/in_result_10lab.php" ?>
             </div>

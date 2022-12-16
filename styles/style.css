@@ -5,7 +5,7 @@ body {
 }
 header {
     background-color: #2D0051;
-    height: 50px;
+    height: 80px;
     width: 100%;
     position: absolute;
     margin: 0px;
@@ -17,6 +17,12 @@ header {
     padding-top: 25px;
     display: flex;
     margin: 0px;
+}
+#multti {
+    color: #e4c2ff;
+    position: absolute;
+    top: 32px;
+    left: 0px;
 }
 .nav {
     color: white;

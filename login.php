@@ -18,10 +18,11 @@
                 <a data-content="Log in" id="login" href="login.php">Log in &#10149;</a>
                 <a data-content="Feedback" href="feedback.php">Feedback &#8258;</a>
                 <a data-content="Math-functions" href="math_6lab.php">Math-functions &#9731;</a>
-                <a data-content="Калькулятор" href="in_7lab.html">Калькулятор &infin;</a>
+                <a data-content="Калькулятор" href="in_7lab.php">Калькулятор &infin;</a>
                 <a data-content="Cats facts" href="in_8lab.html">Cats facts &#10048;</a>
                 <a data-content="PHP functions" href="in_9lab.php">PHP functions &#10149;</a>
                 <a data-content="Text analysis" href="in_10lab.php">Text analysis</a>
+                <a data-content="Multiplication table" id="multti" href="in_11lab.php">Multiplication table</a>
             </div>
         </div>
     </div>        
