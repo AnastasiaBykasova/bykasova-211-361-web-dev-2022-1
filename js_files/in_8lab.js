@@ -121,33 +121,33 @@ function downloadData(page=1) {
     xhr.send();
 }
 
-function foundFact() {
+function foundFact() { //функция для работы поиска          отправляет запрос
     let url = new URL("http://cat-facts-api.std-900.ist.mospolytech.ru/facts");
-    url.searchParams.append('q', document.getElementById("search-field").value);
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
-    xhr.responseType = 'json';
+    url.searchParams.append('q', document.getElementById("search-field").value);//добавлен параметр
+    let xhr = new XMLHttpRequest();//http-запрос без перезагрузки
+    xhr.open('GET', url);//определяем метод запроса и url
+    xhr.responseType = 'json';//определяем тип ответа на запрос - json
     xhr.onload = function () {
         renderRecords(this.response.records);
         setPaginationInfo(this.response['_pagination']);
         renderPaginationElement(this.response['_pagination']);
     }
-    xhr.send();
+    xhr.send();//отправляем запрос
 }
 
-function autocompletionFact() {
-    let perPage = document.querySelector('.per-page-btn').value;
+function autocompletionFact() {//функция для работы автозаполнения
+    //let perPage = document.querySelector('.per-page-btn').value;//получение количества записей на странице
     let url = new URL("http://cat-facts-api.std-900.ist.mospolytech.ru/autocomplete");
-    url.searchParams.append('per-page', perPage);
-    url.searchParams.append('q', document.getElementById("search-field").value);
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
-    xhr.responseType = 'json';
+    //url.searchParams.append('per-page', perPage);//добавление количества записей в запрос 
+    url.searchParams.append('q', document.getElementById("search-field").value);//добавление введенного значения в параметр запроса
+    let xhr = new XMLHttpRequest();//http-запрос без перезагрузки
+    xhr.open('GET', url);//определяем метод запроса и url
+    xhr.responseType = 'json';//определяем тип ответа на запрос - json
     xhr.onload = function () {
-        let list = document.querySelector('.autocompletion');
-        list.innerHTML = '';
+        let list = document.querySelector('.autocompletion');//поле автозаполнения 
+        list.innerHTML = '';//изначально это поле пустое
         console.log(this.response);
-        this.response.forEach(obj => {
+        this.response.forEach(obj => {//для каждого введенного символа выводится список слов, начинающихся с этих символов
             let word = document.createElement('div');
             word.classList.add('autocomplete-item');
             word.innerHTML = obj;
@@ -157,14 +157,14 @@ function autocompletionFact() {
     xhr.send();
 }
 
-function autocompletionFactEvent(event) {
+function autocompletionFactEvent(event) {//функция записи выбранной подсказки в поисковую строку
     let searchField = document.querySelector('.search-field');
     searchField.value = event.target.innerHTML;
     let list = document.querySelector('.autocompletion');
     list.innerHTML = '';
 }
 
-window.onload = function () {
+window.onload = function () {//вызов функций
     downloadData();
     document.querySelector('.pagination').onclick = pageBtnHandler;
     document.querySelector('.per-page-btn').onchange = perPageBtnHandler;

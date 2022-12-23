@@ -2,7 +2,7 @@
 <html long="ru">
 <head>
     <meta charset="utf-8">
-    <title>Боюнова Ольга</title>
+    <title>Multiplication table</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
@@ -14,23 +14,23 @@
         <div id="main_menu">
             <?php
                 echo '<a href="?html_type=TABLE'; // начало ссылки ТАБЛИЧНАЯ ФОРМА
-                if( isset($_GET['content']) ) // если параметр content был передан в скрипт
-                    echo '&content='.$_GET['content']; // добавляем в ссылку второй параметр
-                echo '"'; // завершаем формирование адреса ссылки и закрываем кавычку
+                if( isset($_GET['content']) )
+                    echo '&content='.$_GET['content']; 
+                echo '"';
                 // если в скрипт был передан параметр html_type и параметр равен TABLE
                 if( array_key_exists('html_type', $_GET) && $_GET['html_type']== 'TABLE' )
-                    echo ' class="selected"'; // ссылка выделяется через CSS-класс
-                echo '>Табличная форма</a>'; // конец ссылки ТАБЛИЧНАЯ ФОРМА
+                    echo ' class="selected"'; 
+                echo '>Табличная форма</a>'; 
 
 
-                echo '<a href="?html_type=DIV'; // начало ссылки БЛОКОВАЯ ФОРМА
-                if( isset($_GET['content']) ) // если параметр content был передан в скрипт
-                    echo '&content='.$_GET['content']; // добавляем в ссылку второй параметр
-                echo '"'; // завершаем формирование адреса ссылки и закрываем кавычку
+                echo '<a href="?html_type=DIV'; // начало ссылки БЛОЧНАЯ ФОРМА
+                if( isset($_GET['content']) ) 
+                    echo '&content='.$_GET['content'];
+                echo '"'; 
                 // если в скрипт был передан параметр html_type и параметр равен DIV
                 if( array_key_exists('html_type', $_GET) && $_GET['html_type']== 'DIV' )
-                    echo ' class="selected"'; // ссылка выделяется через CSS-класс
-                echo '>Блоковая форма</a>'; // конец ссылки БЛОКОВАЯ ФОРМА
+                    echo ' class="selected"'; 
+                echo '>Блоковая форма</a>'; 
             ?>
         </div>
 
@@ -40,25 +40,25 @@
                 <div id="product_menu">
                     <?php
                         echo '<a href="?content=n/a'; // начало ссылки ВСЯ ТАБЛИЦА УМНОЖНЕНИЯ
-                        if ( isset($_GET['html_type'])) // если параметр html_type был передан в скрипт
-                            echo '&html_type='.$_GET['html_type']; // добавляем в ссылку второй параметр
-                        echo '"'; // завершаем формирование адреса ссылки и закрываем кавычку
+                        if ( isset($_GET['html_type'])) 
+                            echo '&html_type='.$_GET['html_type']; 
+                        echo '"';
                         // если в скрипт НЕ был передан параметр content
                         if( !isset($_GET['content']) || $_GET['content']=="n/a") 
-                            echo ' class="selected"'; // ссылка выделяется через CSS-класс
-                        echo '>Вся таблица умножения</a>'; // конец ссылки
+                            echo ' class="selected"'; 
+                        echo '>Вся таблица умножения</a>'; 
 
                         // цикл со счетчиком от 2 до 9 включительно
                         for( $i=2; $i<=9; $i++ ) {
-                            echo '<a href="?content='.$i.''; // начало ссылки
+                            echo '<a href="?content='.$i.''; 
                             if ( isset($_GET['html_type']))
                                 echo '&html_type='.$_GET['html_type'];
                             echo '"';
                             // если в скрипт был передан параметр content
                             // и параметр равен значению счетчика
                             if( isset($_GET['content']) && $_GET['content']==$i )
-                                echo ' class="selected"'; // ссылка выделяется через CSS-класс
-                            echo '>Таблица умножения на '.$i.'</a>'; // конец ссылки
+                                echo ' class="selected"'; 
+                            echo '>Таблица умножения на '.$i.'</a>'; 
                         }
                     ?>
                 </div>
@@ -112,7 +112,7 @@ function outTableForm() {
 function outDivForm () {
     // если параметр content не был передан в программу
     if( !isset($_GET['content']) || $_GET['content']=="n/a") {
-        for($i=2; $i<10; $i++) { // цикл со счетчиком от 2 до 9
+        for($i=2; $i<10; $i++) { 
             echo '<div class="bvRow">'; // оформляем таблицу в блочной форме
             outRow( $i ); // вызывем функцию, формирующую содержание
             // столбца умножения на $i
